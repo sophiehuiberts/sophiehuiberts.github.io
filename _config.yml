@@ -11,7 +11,7 @@ title                    : "Sophie Huiberts"
 title_separator          : "-"
 name                     : &name "Sophie Huiberts"
 description              : &description "PhD candidate at CWI"
-url                      : https://sophiehuiberts.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://sophie.huiberts.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sophiehuiberts.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -81,10 +81,10 @@ analytics:
 # Site Author
 author:
   name             : "Sophie Huiberts"
-  avatar           : "profile.png"
-  bio              : "PhD candidate at CWI, research in geometry and optimization"
+  avatar           : "profile.jpg"
+  bio              : "PhD candidate at CWI doing research in geometry and optimization"
   location         : "Amsterdam"
-  employer         :
+  employer         : "https://www.cwi.nl"
   googlescholar    : "https://scholar.google.com/citations?user=s2ii11EAAAAJ&hl=nl"
   email            : "sophie.huiberts@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -113,7 +113,7 @@ author:
   weibo            :
   xing             :
   youtube          :
-  wikipedia        :
+  wikipedia        : "Shuiberts"
 
 
 # Reading Files

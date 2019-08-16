@@ -9,3 +9,4 @@ redirect_from:
 ---
 
 This is Sophie Huiberts' home on the web!
+Currently under construction
