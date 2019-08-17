@@ -21,11 +21,11 @@ atom_feed:
 author:
   name             : "Sophie Huiberts"
   avatar           : "profile.jpg"
-  bio              : "PhD candidate at CWI doing research in geometry and optimization"
+  bio              : "" # "PhD candidate at CWI doing research in geometry and optimization"
   location         : "Amsterdam"
   employer         : "CWI"
   googlescholar    : "https://scholar.google.com/citations?user=s2ii11EAAAAJ&hl=nl"
-  email            : "sophie.huiberts@gmail.com"
+  email            : "sophie@huiberts.me"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   github           : "sophiehuiberts"
   linkedin         :

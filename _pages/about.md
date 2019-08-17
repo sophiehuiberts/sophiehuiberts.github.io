@@ -8,5 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-This is Sophie Huiberts' home on the web!
-Currently under construction
+I am a PhD candidate at [CWI](https://www.cwi.nl) in
+the Networks and Optimization group supervised by
+[Daniel Dadush](https://homepages.cwi.nl/~dadush/).
+
+My research interests are optimization algorithms
+and geometry. In particular I work on linear
+optimization and hope to bring theory and
+practice closer together.
