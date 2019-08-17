@@ -35,4 +35,5 @@ date: 2018-6-20
 venue: '50th Annual ACM SIGACT Symposium on Theory of Computing'
 paperurl: 'https://arxiv.org/abs/1711.05667'
 coauthors: 'Daniel Dadush'
+slidesurl: 'http://sophie.huiberts.me/files/slides-smoothed-simplex.pdf'
 ---
