@@ -1,0 +1,12 @@
+---
+title: "A Friendly Smoothed Analysis of the Simplex Method"
+collection: publications
+permalink: /publication/2018-6-20-A-Friendly-Smoothed-Analysis-of-the-Simplex-Method.md
+excerpt: 'Explaining the excellent practical performance of the simplex method for linear programming has been a major topic of research for over 50 years. One of the most successful frameworks for understanding the simplex method was given by Spielman and Teng (JACM ‘04), who developed the notion of smoothed analysis. Starting from an arbitrary linear program with d variables and n constraints, Spielman and Teng analyzed the expected runtime over random perturbations of the LP (smoothed LP), where variance σ<sup>2</sup> Gaussian noise is added to the LP data. In particular, they gave a two-stage shadow vertex simplex algorithm which uses an expected Õ(d<sup>55</sup>n<sup>86</sup>(1+σ<sup>−30</sup>)) number of simplex pivots to solve the smoothed LP. Their analysis and runtime was substantially improved by Deshpande and Spielman (FOCS ‘05) and later Vershynin (SICOMP ‘09). The fastest current algorithm, due to Vershynin, solves the smoothed LP using an expected O(d<sup>3</sup> log<sup>3</sup> n σ<sup>−4</sup> + d<sup>9</sup> log<sup>7</sup> n) number of pivots, improving the dependence on n from polynomial to logarithmic. While the original proof of Spielman and Teng has now been substantially simplified, the resulting analyses are still quite long and complex and the parameter dependencies far from optimal. In this work, we make substantial progress on this front, providing an improved and simpler analysis of shadow simplex methods, where our main algorithm requires an expected O(d<sup>2</sup> √logn σ<sup>−2</sup> + d<sup>5</sup> log<sup>3/2</sup> n) number of simplex pivots. We obtain our results via an improved shadow bound, key to earlier analyses as well, combined with algorithmic techniques of Borgwardt (ZOR ‘82) and Vershynin. As an added bonus, our analysis is completely modular, allowing us to obtain non-trivial bounds for perturbations beyond Gaussians, such as Laplace perturbations.'
+date: 2018-6-20
+venue: '50th Annual ACM SIGACT Symposium on Theory of Computing'
+paperurl: 'https://arxiv.org/abs/1711.05667'
+coauthros: 'Daniel Dadush'
+---
+
+{{ page.excerpt }}
