@@ -13,14 +13,16 @@ excerpt: >-
   n constraints, Spielman and Teng analyzed the expected
   runtime over random perturbations of the LP (smoothed LP),
   where variance σ<sup>2</sup> Gaussian noise is added to
-  the LP data. Their result has since been substantially
-  improved by Deshpande and
+  the LP data and proved a running time bound
+  polynomial in n, d and σ<sup>−1</sup>.   
 
-  Spielman (FOCS ‘05) and later Vershynin (SICOMP ‘09). The
+
+  Their result has since been substantially improved by Deshpande
+  and Spielman (FOCS ‘05) and later Vershynin (SICOMP ‘09). The
   fastest current algorithm, due to Vershynin, solves the
   smoothed LP using an expected O(d<sup>3</sup> log<sup>3</sup>
   n σ<sup>−4</sup> + d<sup>9</sup> log<sup>7</sup> n) number of
-  pivots.
+  pivots.   
 
   In this work, we prove a better complexity bound using
   a much simpler analysis. Our main algorithm requires
