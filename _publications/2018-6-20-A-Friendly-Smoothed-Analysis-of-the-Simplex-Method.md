@@ -3,7 +3,8 @@ title: "A Friendly Smoothed Analysis of the Simplex Method"
 collection: publications
 permalink: /publication/2018-6-20-A-Friendly-Smoothed-Analysis-of-the-Simplex-Method
 excerpt: >-
-  Last updated June 2019.
+  Updated June 2019 to include a new algorithm,
+  improving running time when σ is big.
 #  Explaining the excellent practical performance of the
 #  simplex method for linear programming has been a major
 #  topic of research for over 50 years. One of the most
