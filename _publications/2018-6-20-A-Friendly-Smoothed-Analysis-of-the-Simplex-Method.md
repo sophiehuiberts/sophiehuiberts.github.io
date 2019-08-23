@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2018-6-20-A-Friendly-Smoothed-Analysis-of-the-Simplex-Method
 excerpt: >-
   Updated June 2019 to include a new algorithm,
-  improving running time when σ is big.
+  improving running time when σ is large.
 #  Explaining the excellent practical performance of the
 #  simplex method for linear programming has been a major
 #  topic of research for over 50 years. One of the most

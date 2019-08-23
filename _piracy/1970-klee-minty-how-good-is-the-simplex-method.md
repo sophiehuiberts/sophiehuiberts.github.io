@@ -1,5 +1,5 @@
 ---
-title: "Klee & Minty (1970) How good is the simplex method"
+title: "Klee & Minty (1970) How Good Is the Simplex Method"
 collection: piracy
 permalink: /piracy/1970-klee-minty-how-good-is-the-simplex-method
 excerpt: >-
