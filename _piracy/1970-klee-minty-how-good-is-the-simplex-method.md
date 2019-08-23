@@ -12,6 +12,6 @@ excerpt: >-
   Washington Univ Seattle Dept. of Mathmatics.
 date: 1-9-1969
 venue: '3rd Symposium on Inequalities, Los Angeles, Sept. 1-9, 1969'
-paperurl: 'http://sophie.huiberts.me/files/klee-minty-how-good-is-simplex-algorithm-1970.pdf'
+paperurl: 'http://sophie.huiberts.me/files/Klee-Minty-How-Good-Is-the-Simplex-Algorithm-1970.pdf'
 ---
 
