@@ -28,9 +28,9 @@ author:
   email            : "sophie@huiberts.me"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   github           : "sophiehuiberts"
-  linkedin         :
+  linkedin         : #"sophie-huiberts"
   orcid            : #"http://orcid.org/yourorcidurl"
-  pinboard         : "sophiehuiberts"
+  pinboard         : #"sophiehuiberts"
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   twitter          : "SophieHuiberts"
   wikipedia        : "Shuiberts"

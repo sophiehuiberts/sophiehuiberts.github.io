@@ -27,13 +27,12 @@
     {% endif %}
     
     {% if post.paperurl %}
-      <p>Paper <a href=" {{ post.paperurl }} "><u>here</u></a>.</p>
+      <p>Paper <a href=" {{ post.paperurl }} "><u>here</u></a>.
+        {% if post.slidesurl %}
+          Slides <a href=" {{ post.slidesurl }} "><u>here</u></a>.
+        {% endif %}
+      </p>
     {% endif %}
-
-    {% if post.slidesurl %}
-      <p>Slides <a href=" {{ post.slidesurl }} "><u>here</u></a>.</p>
-    {% endif %}
-
 
   </article>
 </div>
