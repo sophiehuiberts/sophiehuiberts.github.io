@@ -11,6 +11,6 @@ excerpt: >-
   Often cited as Klee & Minty, How Good Is the Simplex Method?, 1970, Technical Report No. TR-22.
   Washington Univ Seattle Dept. of Mathmatics.
 date: 1-9-1969
-paperurl: 'http://sophie.huiberts.me/files/Klee-Minty-How-Good-Is-the-Simplex-Algorithm-1970.pdf'
+paperurl: 'https://sophie.huiberts.me/files/Klee-Minty-How-Good-Is-the-Simplex-Algorithm-1970.pdf'
 ---
 
