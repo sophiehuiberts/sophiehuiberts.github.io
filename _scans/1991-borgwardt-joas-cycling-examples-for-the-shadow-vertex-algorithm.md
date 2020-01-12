@@ -1,6 +1,6 @@
 ---
 title: "Borgwardt & Joas (1991) Cycling Examples for the Shadow Vertex Algorithm"
-collection: piracy
+collection: scans
 excerpt: >-
   I got this through snail mail from K.H. Borgwardt.
 

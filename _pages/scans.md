@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Piracy"
-permalink: /piracy/
+title: "Scans from the library"
+permalink: /scans/
 author_profile: true
 ---
 
@@ -9,6 +9,6 @@ author_profile: true
 
 Papers I could not track down online.
 
-{% for post in site.piracy %}
+{% for post in site.scans %}
   {% include archive-single.html %}
 {% endfor %}

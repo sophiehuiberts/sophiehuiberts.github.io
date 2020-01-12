@@ -1,6 +1,6 @@
 ---
 title: "Borgwardt & Joas (1992) Verbesserungen in der Laufzeitsanalyse des Simplexverfahrens"
-collection: piracy
+collection: scans
 excerpt: >-
   I got this through snail mail from K.H. Borgwardt.
 

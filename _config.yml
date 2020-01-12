@@ -97,7 +97,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  piracy:
+  scans:
     output: true
     permalink: /:collection/:path/
 
@@ -131,10 +131,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _piracy
+  # _scans
   - scope:
       path: ""
-      type: piracy
+      type: scans
     values:
       layout: single
       author_profile: true

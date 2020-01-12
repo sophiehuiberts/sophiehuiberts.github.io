@@ -1,7 +1,7 @@
 ---
 title: "Klee & Minty (1970) How Good Is the Simplex Method"
-collection: piracy
-permalink: /piracy/1970-klee-minty-how-good-is-the-simplex-method
+collection: scans
+permalink: /scans/1970-klee-minty-how-good-is-the-simplex-method
 excerpt: >-
   Scanned from Inequalities : III :
   proceedings of the 3rd Symposium on inequalities
