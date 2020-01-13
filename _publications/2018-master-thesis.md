@@ -1,5 +1,5 @@
 ---
-title: "How Large is te Shadow? Smoothed Analysis of the Simplex Method"
+title: "How Large is the Shadow? Smoothed Analysis of the Simplex Method"
 collection: publications
 permalink: /publication/2018-master-thesis
 excerpt: >-
