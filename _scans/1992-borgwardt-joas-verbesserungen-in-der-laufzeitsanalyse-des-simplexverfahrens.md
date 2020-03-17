@@ -6,6 +6,6 @@ excerpt: >-
 
   Originally published as Schwerpunktprogramm der Deutschen Forschungsgemeinschaft, Report No. 419.
 date: 1-1-1992
-paperurl: 'https://sophie.huiberts.me/files/Borgwardt-Joas-Verbesserungen-in-der-Laufzeitanalyse-des-Simplexverfahrens-1992.pdf'
+paperurl: '/files/Borgwardt-Joas-Verbesserungen-in-der-Laufzeitanalyse-des-Simplexverfahrens-1992.pdf'
 ---
 
