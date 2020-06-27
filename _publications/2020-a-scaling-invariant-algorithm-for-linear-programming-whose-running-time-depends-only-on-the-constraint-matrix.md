@@ -13,6 +13,7 @@ excerpt: >-
     condition number of the constraint matrix, and give an analysis improving the dependence on
     the dimension of the problem. Moreover, we describe a novel approximation method
     for the involved condition numbers and find an algorithm to rescale the constraint matrix
+    to approximately minimize the condition number.
 venue: '52th Annual ACM SIGACT Symposium on Theory of Computing'
 coauthors: 'Daniel Dadush, Bento Natura and László Végh'
 talkurl: 'https://www.youtube.com/watch?v=G8HJAEA1XzU'
