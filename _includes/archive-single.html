@@ -15,7 +15,7 @@
     {% if post.coauthors %}
 	<p><strong>Joint work with </strong>{{ post.coauthors }}.</p>
     {% endif %}
-    
+
         {% if post.collection == 'publications' and post.venue %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}.</p>
         {% endif %}
@@ -23,11 +23,11 @@
     {% if post.excerpt %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% endif %}
-    
+
     {% if post.paperurl %}
       <p>PDF <a href=" {{ post.paperurl }} "><u>here</u></a>.
-        {% if post.slidesurl %}
-          Slides <a href=" {{ post.slidesurl }} "><u>here</u></a>.
+        {% if post.talkurl %}
+          Talk <a href=" {{ post.talkurl }} "><u>here</u></a>.
         {% endif %}
       </p>
     {% endif %}
