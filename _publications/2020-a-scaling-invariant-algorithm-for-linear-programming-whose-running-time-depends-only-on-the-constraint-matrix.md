@@ -1,5 +1,5 @@
 ---
-title: "A scaling-invariant algorithm for linear programming whose running time depends only on the constraint matrix"
+title: "A Scaling-Invariant Algorithm for Linear Programming Whose Running Time Depends Only on the Constraint Matrix"
 collection: publications
 permalink: '/publications/2020-a-scaling-invariant-algorithm-for-linear-programming-whose-running-time-depends-only-on-the-constraint-matrix'
 date: 2020-6-24
