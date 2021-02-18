@@ -17,7 +17,7 @@ excerpt: >-
 
   An earlier version of this paper appeared in STOC 2018.
 date: 2020-10-22
-venue: 'SIAM Journal on Computing, STOC special issue (invited)'
+venue: 'SIAM Journal on Computing, STOC special issue'
 paperurl: 'https://arxiv.org/abs/1711.05667'
 coauthors: 'Daniel Dadush'
 talkurl: 'https://www.youtube.com/watch?v=-bBOir_uu7o'
