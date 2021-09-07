@@ -23,7 +23,7 @@ author:
   avatar           : "profile.jpg"
   bio              : "" # "PhD candidate at CWI doing research in geometry and optimization"
   location         : "Amsterdam"
-  employer         : "CWI"
+    #  employer         : "CWI"
   googlescholar    : "https://scholar.google.com/citations?user=s2ii11EAAAAJ&hl=nl"
   email            : "sophie@huiberts.me"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
