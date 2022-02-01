@@ -10,5 +10,7 @@ excerpt: >-
   We illustrate these ideas by bounding the smoothed complexity of
   the convex hull in two dimensions.
 paperurl: 'https://sophie.huiberts.me/files/bwca-chapter-simplex.pdf'
+venue: 'Beyond the Worst-Case Analysis of Algorithms, ed. Tim Roughgarden'
+date: 2021-10-21
 coauthors: 'Daniel Dadush'
 ---

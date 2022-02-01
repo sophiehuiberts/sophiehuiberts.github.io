@@ -6,6 +6,6 @@ excerpt: >-
   We prove the first bounds on the diameter of polytopes
   given by random inequalities. Along the way we prove a concentration result
   on the 'shadow size.'
-paperurl: 'https://sophie.huiberts.me/files/random-diameter.pdf'
+paperurl: 'https://arxiv.org/abs/2112.13027'
 coauthors: 'Gilles Bonnet, Daniel Dadush, Uri Grupel, Galyna Livshyts'
 ---
