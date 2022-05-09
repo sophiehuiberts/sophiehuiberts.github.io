@@ -19,7 +19,7 @@ I study practical algorithms for (mixed integer) linear programming.
 These mathematical optimization tools are extensively used in industry and academia,
 and my research focusses on explaining why these algorithms
 perform so much better in practice than in the theoretical worst case.
-You can learn more about my work from my
+A short introduction to my work can be found in my
 [Rising Star talk](https://www.youtube.com/watch?v=S-poynfWfTA)
 during STOC 2021.
 

@@ -21,13 +21,13 @@
         {% endif %}
 
     {% if post.excerpt %}
-    <!-- <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>-->
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% endif %}
 
     {% if post.paperurl %}
-      <p>PDF <a href=" {{ post.paperurl }} "><u>here</u></a>.
+      <p><a href=" {{ post.paperurl }} "><u>PDF</u></a>.
         {% if post.talkurl %}
-          Talk <a href=" {{ post.talkurl }} "><u>here</u></a>.
+          <a href=" {{ post.talkurl }} "><u>Recorded talk</u></a>.
         {% endif %}
       </p>
     {% endif %}

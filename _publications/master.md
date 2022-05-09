@@ -2,6 +2,7 @@
 title: "How Large is the Shadow? Smoothed Analysis of the Simplex Method"
 collection: publications
 permalink: /publication/2018-master-thesis
+date: 2018-6-20
 excerpt: >-
   Thesis for the master's programme Mathematical Sciences at Utrecht University.
 
