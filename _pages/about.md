@@ -15,6 +15,8 @@ I study practical algorithms for (mixed integer) linear programming.
 These mathematical optimization tools are extensively used in industry and academia,
 and my research focusses on explaining why these algorithms
 perform so much better in practice than in the theoretical worst case.
+Related to this, I am interested in geometric and combinatorial questions
+about convex polytopes.
 For a short introduction to my work, check out my
 [Rising Star talk](https://www.youtube.com/watch?v=S-poynfWfTA)
 which I gave during STOC 2021.
