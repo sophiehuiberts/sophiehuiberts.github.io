@@ -8,6 +8,10 @@ main:
 
 #  - title: "CV"
 #     url: /cv/
+#
+
+      #- title: "Blog"
+      #url: /posts/
 
   - title: "Scans from the library"
     url: /scans/    
