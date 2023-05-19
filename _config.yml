@@ -16,6 +16,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sophiehuiberts.github.io"
 atom_feed:
   path                   : # blank (default) uses feed.xml
+read_more: "enabled"
 
 # Site Author
 author:
@@ -109,6 +110,13 @@ defaults:
   - scope:
       path: ""
       type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
     values:
       layout: single
       author_profile: true
