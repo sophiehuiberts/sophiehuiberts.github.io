@@ -113,13 +113,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
   # _publications
   - scope:
       path: ""
