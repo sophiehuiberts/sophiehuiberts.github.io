@@ -90,44 +90,4 @@
   </atom:author>
         
 </item>
-
-<item>
-  <title>
-    <![CDATA[  Website revamp  ]]>
-  </title>
-  <link> https://sophie.huiberts.me/blog/2026/website/index.html </link>
-  <guid> https://sophie.huiberts.me/blog/2026/website/index.html </guid>
-  <description>
-    <![CDATA[  I am thinking of starting a blog. Hence the website redesign  ]]>
-  </description>  
-  
-  <content:encoded>
-    <![CDATA[  
-<h1 id="website_revamp">Website revamp</h1>
-<p>As an academic, having an online presence gives you a big leg up. Some of the key functions are:</p>
-<ol>
-<li><p>collect your papers together for easy perusal</p>
-</li>
-<li><p>show who your advisor and advisees are &#40;this helps editors know if you have a conflict of interest as a potential reviewer&#41;</p>
-</li>
-<li><p>picture &#40;people want to recognize you at events&#41;</p>
-</li>
-<li><p>email address &#40;so that your colleagues can reach you&#41;</p>
-</li>
-</ol>
-<p>If you are a PhD student, and you have at least one paper online, then you should make your own website <em>right now.</em></p>
-<p>My first website was made using <a href="https://academicpages.github.io/">Academic Pages</a>. It worked well enough, until one day in 2023 Jekyll started screaming and stopped compiling. Since then I have been writing html by hand. Starting today, I want to try something new. I rebuilt my website using <a href="https://franklinjl.org/">Frankin</a>. Its another static website generator, with easy support for LaTeX and code highlighting. I host my website through <a href="https://docs.github.com/en/pages">GitHub Pages</a>, linked to my own domain name.</p>
-<p>With the new Franklin tech, I want to start blogging. They say its good to practice your writing frequently. The first few posts will be information that I have tweeted before. Putting that into more a more archive-friendly and longer form format will be my first step towards making it into something useful.</p>
-<p>At least, I think I will. Depends on how well this Github Pages deployment with the new tech will go lmaosob</p>
- ]]>
-  </content:encoded>
-    
-  <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Sophie Huiberts</atom:name>
-  </atom:author>
-        
-</item>
 </channel></rss>

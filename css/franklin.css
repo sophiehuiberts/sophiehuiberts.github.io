@@ -15,8 +15,9 @@
 ================================================================== */
 
 html {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: var(--normal);
+    font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,Helvetica,游ゴシック,pingfang sc,STXihei,华文细黑,microsoft yahei,微软雅黑,SimSun,宋体,Heiti,黑体,sans-serif;
+  font-size:1.2em;
+  font-weight:400;
   color: var(--text-color);
 }
 
@@ -83,7 +84,7 @@ footer {
   position: relative;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 
 /* On wide screens, fix content width to a max value. */
