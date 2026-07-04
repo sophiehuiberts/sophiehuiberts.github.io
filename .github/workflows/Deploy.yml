@@ -2,8 +2,9 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
-      - master
+      - franklin
+  workflow_dispatch:
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest

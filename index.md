@@ -70,6 +70,7 @@ hascode = false
     <div class="col_right_home" style="padding-top: 50px;">
         <img id="me" src="/assets/profile.jpg">
     </div>
+
 </div>
 ~~~
 
