@@ -1,0 +1,4 @@
+Sitemap: https://sophie.huiberts.me/sitemap.xml
+
+User-agent: *
+Disallow:
