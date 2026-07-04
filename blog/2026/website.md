@@ -29,3 +29,5 @@ With the new Franklin tech, I want to start blogging.
 They say its good to practice your writing frequently.
 The first few posts will be information that I have tweeted before.
 Putting that into more a more archive-friendly and longer form format will be my first step towards making it into something useful.
+
+At least, I think I will. Depends on how well this Github Pages deployment with the new tech will go lmaosob
