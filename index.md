@@ -47,7 +47,7 @@ hascode = false
                     </p>
 
                     <h3>Sophie online</h3>
-        <div style="text-align: center;"><a href="mailto:sophie@huiberts.me">email</a>&ensp;//&ensp;<a href="https://dblp.uni-trier.de/pid/210/1008.html">dblp</a>&ensp;//&ensp;<a href="https://scholar.google.com/citations?user=s2ii11EAAAAJ">scholar</a>&ensp;//&ensp;<a href='https://www.youtube.com/@sophiehuiberts'>youtube</a>&ensp;//&ensp;<a href='https://bsky.app/profile/sophie.huiberts.me'>bluesky</a>&ensp;//&ensp;<a href='https://mathstodon.xyz/@SophieHuiberts'>mastodon</a></div>
+        <div style="text-align: center;"><a href="mailto:sophie@huiberts.me">email</a>&ensp;//&ensp;<a href="https://dblp.uni-trier.de/pid/210/1008.html">dblp</a>&ensp;//&ensp;<a href="https://scholar.google.com/citations?user=s2ii11EAAAAJ">scholar</a>&ensp;//&ensp;<a href='https://www.youtube.com/@sophiehuiberts'>youtube</a>&ensp;//&ensp;<a href='https://bsky.app/profile/sophie.huiberts.me' rel="me">bluesky</a>&ensp;//&ensp;<a href='https://mathstodon.xyz/@SophieHuiberts' rel="me">mastodon</a></div>
                     <p>
                         Since 2023 I have stopped flying.
                         I made this decision due to the outsized climate impact of air travel,
