@@ -189,7 +189,6 @@ Find and list all papers with all tags in `params`.
     sort!(paths, by=sorter, rev=true)
 
     io = IOBuffer()
-    write(io,"<p>")
     for (i, path) in enumerate(paths)
         html = replace(path, joinpath("src", "pages") => "pub")
         html = replace(html, r".md$" => "")
@@ -204,10 +203,11 @@ Find and list all papers with all tags in `params`.
 
         # paper title
         write(io, """$t <date>($(Dates.format(pvd, "u yyyy")))</date><br>\n""")
+        # indent but also when line wraps (mobile)
+        write(io, """<div class="paperdetails">""")
         # authors
-        write(io, """&emsp;<i style="font-weight: 300;">$(pagevar(path, :authors))</i><br>\n""")
+        write(io, """<i style="font-weight: 300;">$(pagevar(path, :authors))</i><br>\n""")
         # links
-        write(io, "&emsp;")
         # main paper venue
         venue = pagevar(path, :venue)
         link = pagevar(path, :link)
@@ -244,7 +244,8 @@ Find and list all papers with all tags in `params`.
         if i != length(paths)
             write(io, "<br>")
         end
+        # end indent
+        write(io, """</div>""")
     end
-    write(io,"</p>")
     return String(take!(io))
 end
