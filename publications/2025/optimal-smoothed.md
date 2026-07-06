@@ -4,7 +4,7 @@ hasmath = false
 hascode = true
 
 date = Date(2026, 08, 24)
-arxiv = "https://arxiv.org/abs/2510.04197"
+arxiv = "https://arxiv.org/abs/2504.04197"
 venue = "FOCS 2025"
 doi = "10.1109/focs63196.2025.00096"
 link = "https://doi.org/" * doi
