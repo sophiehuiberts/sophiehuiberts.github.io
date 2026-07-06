@@ -11,7 +11,7 @@ hascode = false
 
 ~~~
 
-            <h1 class="page__title">Chapters</h1>
+            <h2 class="page__title">Chapters</h2>
             <ol>
                 <li class="paper"><a class="papertitel" href="https://sophie.huiberts.me/files/bwca-chapter-simplex.pdf">Smoothed Analysis of the Simplex Method</a><br/>
                     with
@@ -23,7 +23,7 @@ hascode = false
                 </li>
             </ol>
 
-            <h1 class="page__title">Theses</h1>
+            <h2 class="page__title">Theses</h2>
             <ol>
                 <li class="paper"><a class="papertitel" href="https://sophie.huiberts.me/files/thesis-huiberts.pdf">Geometric Aspects of Linear Programming: Shadow Paths, Central Paths, and a Cutting Plane Method</a><br/>
                 PhD thesis.<br/>
@@ -34,7 +34,7 @@ hascode = false
                     Thesis for the master’s programme Mathematical Sciences at Utrecht University. Finalist (top 3) for Faculty of Science master thesis prize.
                 </li>
             </ol>
-            <h1 class="page__title">Miscellaneous</h1>
+            <h2 class="page__title">Miscellaneous</h2>
             <ol>
                 <li class="paper"><a class="papertitel" href="https://www.vvsor.nl/stator/pages/stator-july-2025/">Het Dieetprobleem</a><br/>
                     STAtOR, July 2025. <a class="talklink" href="https://www.youtube.com/watch?v=OrhiqVmsVxE">video</a>
@@ -47,7 +47,7 @@ hascode = false
                 </li>
             </ol>
 
-    <h2 class="page__title">Collaborators</h1>
+    <h2 class="page__title">Collaborators</h2>
     Thanks to all my collaborators:
         <a class="coauteur" href="https://eleonbach.github.io/">Eleon Bach</a>,
         <a class="coauteur" href="https://alexblackmath.github.io/">Alex Black</a>,
