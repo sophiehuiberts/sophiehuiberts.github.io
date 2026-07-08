@@ -1,1 +1,307 @@
-<h1>References, citations, footnotes, etc.</h1> <p>This page is about <a href="https://www.youtube.com/watch?v=OrhiqVmsVxE">the Youtube recording of my 2024 talk</a>.</p> <p> Think of this document not as a reference list of a paper, it is not complete enough for that. Instead consider this document to be what would happen if, after the talk, you came up to me to ask me for more detail on something and I would name a paper from the top of my head. </p> <p> [1] In 2019, the Dutch military paid 53k euros before tax for a site-wide Gurobi licence. <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-defensie/documenten/woo-besluiten/2024/11/07/woo-besluit-inclusief-lijst-van-documenten-en-bijlagen-over-aanbesteding-van-en-besluitvorming-over-aanschaf-van-mixed-integer-lineaire-software">Link to FOI request</a> </p> <p> [2] Shamir is the classic reference here, surveying the actual literature. Andrei does experiments on more recent code and instances. Dantzig and FICO are trusted experts with lots of practical experience. Because rules of thumb are rules of thumb, there are a couple different versions of it. 2n, 3(n-d), (n+d) and everything inbetween can be found. </p> <ol> <li> Andrei, N.: On the complexity of MINOS package for linear programming. Studies in Informatics and Control, 13(1):35–46, 2004. <li> Dantzig, G.B.: Linear Programming and Extensions. Princeton University Press, December 1963. <li> Shamir, R.: The efficiency of the simplex method: a survey. Management science 33(3), 301–334 (1987) <li> FICO Xpress Optimizer reference manual, Chapter 4. <a href="https://web.archive.org/web/20230328100937/https://www.fico.com/fico-xpress-optimization/docs/latest/solver/optimizer/HTML/chapter4.html">Link to FICO Xpress manual</a> </ol> <p> [3] Every pivot rule gets one or more papers so we get a long list here. I am lying slightly in the video, there are randomized simplex methods that run in time faster than exponential, but slower than polynomial. See Friedman, Hansen, Zwick (2011) for more info. </p> <ol> <li> Amenta, N., Ziegler, G.: Deformed products and maximal shadows of polytopes. Contemporary Mathematics 223, 57–90 (1999) <li> Avis, D., Chvátal, V.: Notes on Bland’s pivoting rule. Polyhedral Combinatorics: Dedicated to the memory of DR Fulkerson pp. 24–34 (1978) <li> Ben-Tal, A., Nemirovski, A.: On polyhedral approximations of the second-order cone. Mathematics of Operations Research 26(2), 193–205 (2001) <li> Carstensen, P.: Complexity of some parametric integer and network programming problems. Mathematical Programming 26(1), 64–75 (1983) <li> Disser, Y., Friedmann, O., Hopp, A.: An exponential lower bound for Zadeh’s pivot rule. Mathematical Programming 199(1-2), 865–936 (2023) <li> Disser, Y., Mosis, N.: A unified worst case for classical simplex and policy iteration pivot rules. In: Proceedings of the 34th International Symposium on Algorithms and Computation (ISAAC). p. 27(17) (2023) <li> Friedmann, O.: A subexponential lower bound for Zadeh’s pivoting rule for solving linear programs and games. In: International Conference on Integer Programming and Combinatorial Optimization (IPCO). pp. 192–206. Springer (2011) <li> Friedmann, O., Hansen, T., Zwick, U.: Subexponential lower bounds for randomized pivoting rules for the simplex algorithm. In: Proceedings of the forty-third annual ACM symposium on Theory of computing (STOC). pp. 283–292 (2011) <li> Gajjar, K., Radhakrishnan, J.: Parametric shortest paths in planar graphs. In: 2019 IEEE 60th Annual Symposium on Foundations of Computer Science (FOCS). pp. 876–895. IEEE (2019) Goldfarb, D.: Worst case complexity of the shadow vertex simplex algorithm. Technical report. (1983) <li> Goldfarb, D., Sit, W.: Worst case behavior of the steepest edge simplex method. Discrete Applied Mathematics 1(4), 277–285 (1979) <li> Jeroslow, R.: The simplex algorithm with the pivot rule of maximizing criterion improvement. Discrete Mathematics 4(4), 367–377 (1973) <li> Klee, V., Minty, G.: How good is the simplex algorithm. Inequalities 3(3), 159–175 (1972) <li> Kortenkamp, U., Richter-Gebert, J., Sarangarajan, A., Ziegler, G.: Extremal properties of 0/1-polytopes. Discrete &amp; Computational Geometry 17, 439–448 (1997) <li> Mulmuley, K., Shah, P.: A lower bound for the shortest path problem. In: Proceedings 15th Annual IEEE Conference on Computational Complexity (CCC). pp. 14–21. IEEE (2000) <li> Murty, K.: Computational complexity of parametric linear programming. Mathematical Programming 19(1), 213–219 (1980) <li> Roos, C.: An exponential example for Terlaky’s pivoting rule for the criss-cross simplex method. Mathematical Programming 46, 79–84 (1990) <li> Zadeh, N.: A bad network problem for the simplex method and other minimum cost flow algorithms. Mathematical Programming 5, 255–266 (1973) <li> Zadeh, N.: What is the worst case behavior of the simplex algorithm. Technical report (1980) </ol> <p>[4] I am skipping over a couple of papers that extend the original result by Kitahara and Mizuno to different pivot rules. </p> <ol> <li> Dantzig, G. B.: Origins of the simplex method. In: A History of Scientific Computing (1990) <li> Kitahara, T., Mizuno, S.: A bound for the number of different basic solutions generated by the simplex method. Mathematical Programming 137 (2013): 579-586. <li> Kuno, T., Sano, Y., Tsuruda, T.: Computing Kitahara–Mizuno’s bound on the number of basic feasible solutions generated with the simplex algorithm. Optimization letters 12.5 (2018): 933-943. </ol> <p>[5] There is a good amount of literature on the topic of average-case analysis of the simplex method. The Simplex Method by Borgwardt gives the definitive overview of everything that came out before its publication. The main notable paper to come out later was by Borgwardt as well, improving the upper bound result. </p> <ol> <li> Borgwardt, K.H.: The Simplex Method: A Probabilistic Analysis. Vol. 1. Springer-Verlag, Berlin, 1987. doi: 10.1007/978-3-642-61578-8. <li> Borgwardt, K.H.: “A Sharp Upper Bound for the Expected Number of Shadow Vertices in Lp-Polyhedra Under Orthogonal Projection on Two-Dimensional Planes”. In: Mathematics of Operations Research 24.3 (1999), pp. 544–603. Doi: 10.1287/moor.24.4.925 Lattice polytopes </ol> <p>[6] This is a more modern approach to things, people are actively working on this still. These two papers should be a functional entrypoint. </p> <ol> <li> Black, A.: Small shadows of lattice polytopes. In: Proceedings of the 2023 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA). pp. 1669–1679. SIAM (2023) <li> Black, A., De Loera, J., Kafer, S., Sanità, L.: On the simplex method for 0/1-polytopes. Mathematics of Operations Research (2024) </ol> <p>[7] Smoothed analysis originated in the work of Spielman and Teng, and the strongest result is proven by Huiberts, Lee and Zhang. The clearest presentation, although slightly dated, is available in the paper and survey by Dadush and Huiberts. The survey is located in the book edited by Roughgarden. The plot, as well as the code used to create it, can be found in Huiberts, Lee and Zhang. </p> <ol> <li> Dadush, D., Huiberts, S.: A friendly smoothed analysis of the simplex method. SIAM Journal on Computing 49(5), 18–449 (2019) <li> Huiberts, S., Lee, Y.T., Zhang, X.: Upper and lower bounds on the smoothed complexity of the simplex method. In: Proceedings of the 55th Annual ACM Symposium on Theory of Computing (STOC). pp. 1904–1917 (2023) <li> Tim Roughgarden, editor. Beyond the Worst-Case Analysis of Algorithms. Cambridge University Press, December 2020. <li> Spielman, D., Teng, S.: Smoothed analysis of algorithms: Why the simplex algorithm usually takes polynomial time. Journal of the ACM (JACM) 51(3), 385–463 (2004) </ol> <p>[8] If you are going to read one paper on the topic of the simplex method assuming bounded subdeterminants, make it that by Dadush and Hähnle. The other two are fun too. </p> <ol> <li> Brunsch, T., Röglin, H.: Finding short paths on polytopes by the shadow vertex algorithm. In: Automata, Languages, and Programming: 40th International Colloquium (ICALP) Proceedings. pp. 279–290. Springer (2013) <li> Dadush, D. N., Hähnle, N.: On the shadow simplex method for curved polyhedra. Discrete &amp; Computational Geometry 56(4), 882–909 (2016) <li> Eisenbrand, F., Vempala, S.: Geometric random edge. Mathematical Programming 164, 325–339 (2017) </ol> <p>[9] McCann Jr, C. R., Perlman, M.: On Thinking about George Stigler. The Economic Journal, 103(419), 994-1014 (1993) </p> <p>[10] Stigler, G. J.: The economics of minimum wage legislation. The American Economic Review, 36(3), 358-365 (1946) </p> <p>[11] Stigler, G. J.: The cost of subsistence. Journal of farm economics, 27(2), 303-314 (1945) </p> <p>[12] Williams, F., Hanson, A.: Money Disbursements of Wage Earners and Clerical Workers in Five Cites in the Pacific Region 1934-36. United States Bureau of Labor Statistics Bulletin No. 639 (1939) </p> <p>[13] I spent a short hour in the CWI library, during which I found 12 books that I would call 'introductory LP textbooks'. Among them, there were 6 books which included the diet problem. <p>[14] Hillier, S., Hillier, M. Schmedders, K., Stephens, M.: Introduction to Management Science: A Modeling and Case Studies Approach with Spreadsheets, 4th edition (2010) ISBN 978-0-07-809660-0 </p> <p>[15] Mitra, S.,Application of Operations Research Methods to Correctional Problems. Criminal Justice and Behavior (1975) </p> <p>[16] Hy, R.J., Feig, D., Regoli, R.M.: Linear programming in criminal justice administration. American Journal of Criminal Justice 8, 195–213 (1984) </p> <p>[17] Soble, L., Stroud, K., Weinstein, M.: Eating Behind Bars: Ending the Hidden Punishment of Food in Prison. Impact Justice (2020) <a href="https://impactjustice.org/innovation/food-in-prison/#report">Link to Impact Justice report</a> </p> <p>[18]</p> <ol> <li>UN OCHA. Locked in: The Humanitarian impact of two years of blockade on the Gaza Strip. Special Focus. United Nations Office for the Coordination of Humanitarian Affairs. (2009) <li>International Committee of the Red Cross: Gaza - 1.5 million people trapped in despair (June 2009) </ol> <p>[19] Gisha has their Cloudflare settings on high alert, to a point where I am unable to access their website most of the time. For that reason I am linking their documents as captured a decade ago by the Internet Archive.</p> <ol><li> State of Israel Ministry of Defense. Re: AAA 3300/11 Ministry of Defense v. Gisha “Food Consumption in the Gaza Strip – Red Lines” Presentation. Unofficial translation by Gisha (2012) <a href="https://web.archive.org/web/20121018213038/http://www.gisha.org/UserFiles/File/publications/redlines/red-lines-presentation-eng.pdf">Link to Internet Archive capture</a> <li> Gisha. Reader: "Food Consumption in the Gaza Strip - Red Lines" (2012) <a href="https://web.archive.org/web/20241115132433/https://www.gisha.org/UserFiles/File/publications/redlines/redlines-position-paper-eng.pdf">Link to Internet Archive capture</a> </ol> <p>[20] Blau, U., Feldman, Y.: Gaza Bonanza. Haaretz June 11th 2009. <a href="https://www.haaretz.com/2009-06-11/ty-article/gaza-bonanza/0000017f-f886-d460-afff-fbe6cf930000?v=1732317570649">Link to Haaretz</a> </p> <p>[21] Check out the reader linked above once more, and I suggest you read this paper by Gross and Feldman. <ol> <li> Gross, Aeyal, and Tamar Feldman. "We Didn't Want to to Hear the Word Calories: Rethinking Food Security, Food Power, and Food Sovereignty-Lessons from the Gaza Closure." Berkeley J. Int'l L. 33 (2015): 379. </ol> </p> <p>[21] There is a lot of important secondary literature on how you should interpret what these rights mean. Too far outside my expertise to give you specific pointers. <br><br> If you know stuff about international law and you'd like to collaborate or whatever then hit me up!! <ol> <li> General Assembly resolution 2200A (XXI): International Covenant on Economic, Social and Cultural Rights (1966) <a href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-economic-social-and-cultural-rights">Link to OHCHR</a> <li> Committee on Economic, Social and Cultural Rights: Substantive Issues Arising in the Implementation of the International Covenant on Economic, Social and Cultural Rights: General Comment 12 (1999) <a href="https://www.ohchr.org/en/documents/general-comments-and-recommendations/ec1219995-general-comment-no-12-right-adequate-food">Link to OHCHR</a> </ol> <p>[22] Literally go and read the <a href="https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/methods-and-application-of-food-composition-laboratory/mafcl-site-pages/sr11-sr28/">USDA National Nutrient Database for Standard Reference Documentation and User Guide</a>. It is in-depth but still I felt like I understood most of what goes on in there. </p><p>The freedom of choice refers to things like, your choice of Atwater factors, your nitrogen to protein conversion ratio, places where there are multiple reasonable choices and you can just kind of choose any of a number of options? Mostly this would be a choice made by companies that process food. Honestly I should read up more about this. <p>[23] There are studies like the one cited below, where they take prison's meal plan and recalculate the amount of nutrients using some software package. It is a good start, but probably the nutritional data used by the researchers is the same as the one used by the prison. That makes this paper into an investigation into what we might call the internal validity of the prison's meal planning process. The matter of external validity is left alone. </p> <p> As a concrete example, consider what would happen if a particular food item's measured protein content in the database is too high, higher than the actual typical protein content of that food. The prison's meal planning software would recommend that item because it believes it is good value for money. If it does, then the produced meal will have less protein inside then the meal planner believes. This could in the long term mean that the incarcerated people do not get enough protein. The study design in the references paper is not likely to catch this. No shade to them though, it is an important first step. </p> <ol> <li>Johnson, C., Labbé, C., Lachance, A., LeBlanc, C. P. (2022). The menu served in Canadian penitentiaries: a nutritional analysis. Nutrients, 14(16), 3400. </ol> <p><b>[Bonus]</b> The benchmark data is from a letter to John Von Neumann by George Dantzig, located in the Library of Congress. <a href="https://sophie.huiberts.me/files/dantzig-von-neumann-1948.pdf">Link to a scan of this letter</a>. The book by Grier is an amazing telling of the history around this computation. </p> <ol><li> Grier, David Alan. When computers were human. Princeton University Press, 2013. </ol> <p>[24] This is from a Gurobi webinar. If you are in my field then 100 percent you should sign up for their mailing list to get all the webinar announcements. </p> <p>[25] Difficult to give an easy to understand citation here. Literally I learned most of what I know from talking to people directly, and not for lack of trying. The best lead I have for you is the textbook by Maros, or the source code for <a href="https://highs.dev/">HiGHS</a> or <a href="https://github.com/google/or-tools/tree/stable/ortools/glop">GLOP</a> if you prefer reading code I guess. </p> <ol> <li> Maros, I. (2002). Computational techniques of the simplex method (Vol. 61). Springer Science &amp; Business Media. </ol> <h2>Bonus!</h2> <p> I only read this after I had finished recording, but if you're reading this then I can wholeheartedly recommend <a href="https://sumrevija.si/en/issues/sum-15/">the essay "Optimize This!" by Zoë Hitzig in Šum.</a> </p> <p> Music is from Heaven Will Be Mine: LOOPS by Alec Lambert. <a href="https://aleclambert.bandcamp.com/album/heaven-will-be-mine-loops">Link to Alec Lambert's Bandcamp page.</a> </p> <p> The image of the onion is from the video game Hades by Supergiant Games. </p> </html
+<html><body>
+
+        <h1>References, citations, footnotes, etc.</h1>
+        <p>This page is about <a href="https://www.youtube.com/watch?v=OrhiqVmsVxE">the Youtube recording of my 2024 talk</a>.</p>
+        <p>
+        Think of this document not as a reference list of a paper, it is not complete enough for that. Instead consider this document to be what would happen if, after the talk, you came up to me to ask me for more detail on something and I would name a paper from the top of my head.
+        </p>
+
+
+        <p>
+[1] In 2019, the Dutch military paid 53k euros before tax for a site-wide Gurobi licence.
+<a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-defensie/documenten/woo-besluiten/2024/11/07/woo-besluit-inclusief-lijst-van-documenten-en-bijlagen-over-aanbesteding-van-en-besluitvorming-over-aanschaf-van-mixed-integer-lineaire-software">Link to FOI request</a>
+        </p>
+        <p>
+[2] Shamir is the classic reference here, surveying the actual literature. Andrei does experiments on more recent code and instances. Dantzig and FICO are trusted experts with lots of practical experience.
+Because rules of thumb are rules of thumb, there are a couple different versions of it. 2n, 3(n-d), (n+d) and everything inbetween can be found.
+        </p>
+<ol>
+    <li>
+Andrei, N.: On the complexity of MINOS package for linear programming. Studies in Informatics and Control, 13(1):35–46, 2004.
+    </li>
+    <li>
+Dantzig, G.B.: Linear Programming and Extensions. Princeton University Press, December 1963.
+    </li>
+    <li>
+Shamir, R.: The efficiency of the simplex method: a survey. Management science 33(3), 301–334 (1987)
+    </li>
+    <li>
+ FICO Xpress Optimizer reference manual, Chapter 4.
+<a href="https://web.archive.org/web/20230328100937/https://www.fico.com/fico-xpress-optimization/docs/latest/solver/optimizer/HTML/chapter4.html">Link to FICO Xpress manual</a>
+    </li>
+</ol>
+
+        <p>
+[3] Every pivot rule gets one or more papers so we get a long list here. I am lying slightly in the video, there are randomized simplex methods that run in time faster than exponential, but slower than polynomial. See Friedman, Hansen, Zwick (2011) for more info.
+        </p>
+
+<ol>
+    <li>
+Amenta, N., Ziegler, G.: Deformed products and maximal shadows of polytopes. Contemporary Mathematics 223, 57–90 (1999)
+    </li>
+    <li>
+Avis, D., Chvátal, V.: Notes on Bland’s pivoting rule. Polyhedral Combinatorics: Dedicated to the memory of DR Fulkerson pp. 24–34 (1978)
+    </li>
+    <li>
+Ben-Tal, A., Nemirovski, A.: On polyhedral approximations of the second-order cone. Mathematics of Operations Research 26(2), 193–205 (2001)
+    </li>
+    <li>
+Carstensen, P.: Complexity of some parametric integer and network programming problems. Mathematical Programming 26(1), 64–75 (1983)
+    </li>
+    <li>
+Disser, Y., Friedmann, O., Hopp, A.: An exponential lower bound for Zadeh’s pivot rule. Mathematical Programming 199(1-2), 865–936 (2023)
+    </li>
+    <li>
+Disser, Y., Mosis, N.: A unified worst case for classical simplex and policy iteration pivot rules. In: Proceedings of the 34th International Symposium on Algorithms and Computation (ISAAC). p. 27(17) (2023)
+    </li>
+    <li>
+Friedmann, O.: A subexponential lower bound for Zadeh’s pivoting rule for solving linear programs and games. In: International Conference on Integer Programming and Combinatorial Optimization (IPCO). pp. 192–206. Springer (2011)
+    </li>
+    <li>
+Friedmann, O., Hansen, T., Zwick, U.: Subexponential lower bounds for randomized pivoting rules for the simplex algorithm. In: Proceedings of the forty-third annual ACM symposium on Theory of computing (STOC). pp. 283–292 (2011)
+    </li>
+    <li>
+Gajjar, K., Radhakrishnan, J.: Parametric shortest paths in planar graphs. In: 2019
+IEEE 60th Annual Symposium on Foundations of Computer Science (FOCS). pp. 876–895. IEEE (2019)
+Goldfarb, D.: Worst case complexity of the shadow vertex simplex algorithm. Technical report. (1983)
+    </li>
+    <li>
+Goldfarb, D., Sit, W.: Worst case behavior of the steepest edge simplex method. Discrete Applied Mathematics 1(4), 277–285 (1979)
+    </li>
+    <li>
+Jeroslow, R.: The simplex algorithm with the pivot rule of maximizing criterion improvement. Discrete Mathematics 4(4), 367–377 (1973)
+    </li>
+    <li>
+Klee, V., Minty, G.: How good is the simplex algorithm. Inequalities 3(3), 159–175 (1972)
+    </li>
+    <li>
+Kortenkamp, U., Richter-Gebert, J., Sarangarajan, A., Ziegler, G.: Extremal properties of 0/1-polytopes. Discrete &amp; Computational Geometry 17, 439–448 (1997)
+    </li>
+    <li>
+Mulmuley, K., Shah, P.: A lower bound for the shortest path problem. In: Proceedings 15th Annual IEEE Conference on Computational Complexity (CCC). pp. 14–21. IEEE (2000)
+    </li>
+    <li>
+Murty, K.: Computational complexity of parametric linear programming. Mathematical Programming 19(1), 213–219 (1980)
+    </li>
+    <li>
+Roos, C.: An exponential example for Terlaky’s pivoting rule for the criss-cross simplex method. Mathematical Programming 46, 79–84 (1990)
+    </li>
+    <li>
+Zadeh, N.: A bad network problem for the simplex method and other minimum cost flow algorithms. Mathematical Programming 5, 255–266 (1973)
+    </li>
+    <li>
+Zadeh, N.: What is the worst case behavior of the simplex algorithm. Technical report (1980)
+    </li>
+</ol>
+
+<p>[4] I am skipping over a couple of papers that extend the original result by Kitahara and Mizuno to different pivot rules.
+        </p>
+
+        <ol>
+            <li>
+Dantzig, G. B.: Origins of the simplex method. In: A History of Scientific Computing (1990)
+    </li>
+    <li>
+Kitahara, T., Mizuno, S.: A bound for the number of different basic solutions generated by the simplex method. Mathematical Programming 137 (2013): 579-586.
+    </li>
+    <li>
+Kuno, T., Sano, Y., Tsuruda, T.: Computing Kitahara–Mizuno’s bound on the number of basic feasible solutions generated with the simplex algorithm. Optimization letters 12.5 (2018): 933-943.
+    </li>
+</ol>
+
+<p>[5]
+There is a good amount of literature on the topic of average-case analysis of the simplex method. The Simplex Method by Borgwardt gives the definitive overview of everything that came out before its publication. The main notable paper to come out later was by Borgwardt as well, improving the upper bound result.
+</p>
+<ol>
+    <li>
+Borgwardt, K.H.: The Simplex Method: A Probabilistic Analysis. Vol. 1. Springer-Verlag,
+Berlin, 1987. doi: 10.1007/978-3-642-61578-8.
+    </li>
+    <li>
+Borgwardt, K.H.: “A Sharp Upper Bound for the Expected Number of Shadow Vertices
+in Lp-Polyhedra Under Orthogonal Projection on Two-Dimensional Planes”. In: Mathematics
+of Operations Research 24.3 (1999), pp. 544–603. Doi: 10.1287/moor.24.4.925
+Lattice polytopes
+    </li>
+</ol>
+
+<p>[6]
+This is a more modern approach to things, people are actively working on this still. These two papers should be a functional entrypoint.
+</p>
+<ol>
+    <li>
+Black, A.: Small shadows of lattice polytopes. In: Proceedings of the 2023 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA). pp. 1669–1679. SIAM (2023)
+    </li>
+    <li>
+Black, A., De Loera, J., Kafer, S., Sanità, L.: On the simplex method for 0/1-polytopes. Mathematics of Operations Research (2024)
+    </li>
+</ol>
+
+<p>[7]
+Smoothed analysis originated in the work of Spielman and Teng, and the strongest result is proven by Huiberts, Lee and Zhang. The clearest presentation, although slightly dated, is available in the paper and survey by Dadush and Huiberts. The survey is located in the book edited by Roughgarden.
+The plot, as well as the code used to create it, can be found in Huiberts, Lee and Zhang.
+</p>
+<ol>
+    <li>
+Dadush, D., Huiberts, S.: A friendly smoothed analysis of the simplex method. SIAM Journal on Computing 49(5), 18–449 (2019)
+    </li>
+    <li>
+Huiberts, S., Lee, Y.T., Zhang, X.: Upper and lower bounds on the smoothed complexity of the simplex method. In: Proceedings of the 55th Annual ACM Symposium on Theory of Computing (STOC). pp. 1904–1917 (2023)
+    </li>
+    <li>
+Tim Roughgarden, editor. Beyond the Worst-Case Analysis of Algorithms. Cambridge University Press, December 2020.
+    </li>
+    <li>
+Spielman, D., Teng, S.: Smoothed analysis of algorithms: Why the simplex algorithm usually takes polynomial time. Journal of the ACM (JACM) 51(3), 385–463 (2004)
+</ol>
+
+<p>[8] If you are going to read one paper on the topic of the simplex method assuming bounded subdeterminants, make it that by Dadush and Hähnle. The other two are fun too.
+</p>
+<ol>
+    <li>
+Brunsch, T., Röglin, H.: Finding short paths on polytopes by the shadow vertex algorithm. In: Automata, Languages, and Programming: 40th International Colloquium (ICALP) Proceedings. pp. 279–290. Springer (2013)
+    </li>
+    <li>
+Dadush, D. N., Hähnle, N.: On the shadow simplex method for curved polyhedra. Discrete &amp; Computational Geometry 56(4), 882–909 (2016)
+    </li>
+    <li>
+Eisenbrand, F., Vempala, S.: Geometric random edge. Mathematical Programming 164, 325–339 (2017)
+    </li>
+</ol>
+
+
+<p>[9]
+McCann Jr, C. R., Perlman, M.: On Thinking about George Stigler. The Economic Journal, 103(419), 994-1014 (1993)
+</p>
+<p>[10]
+Stigler, G. J.: The economics of minimum wage legislation. The American Economic Review, 36(3), 358-365 (1946)
+</p>
+<p>[11]
+Stigler, G. J.: The cost of subsistence. Journal of farm economics, 27(2), 303-314 (1945)
+</p>
+<p>[12]
+Williams, F., Hanson, A.: Money Disbursements of Wage Earners and Clerical Workers in Five Cites in the Pacific Region 1934-36. United States Bureau of Labor Statistics Bulletin No. 639 (1939)
+</p>
+
+<p>[13] I spent a short hour in the CWI library, during which I found 12 books that I would call 'introductory LP textbooks'. Among them, there were 6 books which included the diet problem.
+
+<p>[14]
+Hillier, S., Hillier, M. Schmedders, K., Stephens, M.: Introduction to Management Science: A Modeling and Case Studies Approach with Spreadsheets, 4th edition (2010) ISBN 978-0-07-809660-0
+</p>
+<p>[15]
+Mitra, S.,Application of Operations Research Methods to Correctional Problems. Criminal Justice and Behavior (1975)
+</p>
+<p>[16]
+Hy, R.J., Feig, D., Regoli, R.M.: Linear programming in criminal justice administration. American Journal of Criminal Justice 8, 195–213 (1984)
+</p>
+<p>[17]
+Soble, L., Stroud, K., Weinstein, M.: Eating Behind Bars: Ending the Hidden Punishment of Food in Prison. Impact Justice (2020)
+<a href="https://impactjustice.org/innovation/food-in-prison/#report">Link to Impact Justice report</a>
+</p>
+
+
+<p>[18]</p>
+<ol>
+    <li>UN OCHA. Locked in: The Humanitarian impact of two years of blockade on the Gaza Strip. Special Focus. United Nations Office for the Coordination of Humanitarian Affairs. (2009)</li>
+
+<li>International Committee of the Red Cross: Gaza - 1.5 million people trapped in despair (June 2009)</li>
+</ol>
+
+<p>[19]
+Gisha has their Cloudflare settings on high alert, to a point where I am unable to access their website most of the time. For that reason I am linking their documents as captured a decade ago by the Internet Archive.</p>
+<ol><li>
+State of Israel Ministry of Defense. Re: AAA 3300/11 Ministry of Defense v. Gisha “Food Consumption in the Gaza Strip – Red Lines” Presentation. Unofficial translation by Gisha (2012)
+<a href="https://web.archive.org/web/20121018213038/http://www.gisha.org/UserFiles/File/publications/redlines/red-lines-presentation-eng.pdf">Link to Internet Archive capture</a>
+    </li><li>
+Gisha. Reader: "Food Consumption in the Gaza Strip - Red Lines" (2012)
+<a href="https://web.archive.org/web/20241115132433/https://www.gisha.org/UserFiles/File/publications/redlines/redlines-position-paper-eng.pdf">Link to Internet Archive capture</a>
+    </li></ol>
+
+    <p>[20]
+Blau, U., Feldman, Y.: Gaza Bonanza. Haaretz June 11th 2009.
+<a href="https://www.haaretz.com/2009-06-11/ty-article/gaza-bonanza/0000017f-f886-d460-afff-fbe6cf930000?v=1732317570649">Link to Haaretz</a>
+    </p>
+
+    <p>[21] Check out the reader linked above once more, and I suggest you read
+    this paper by Gross and Feldman.
+    <ol>
+        <li>
+            Gross, Aeyal, and Tamar Feldman. "We Didn't Want to to Hear the Word Calories: Rethinking Food Security, Food Power, and Food Sovereignty-Lessons from the Gaza Closure." Berkeley J. Int'l L. 33 (2015): 379.
+        </li>
+    </ol>
+    </p>
+
+
+<p>[21] There is a lot of important secondary literature on how you should interpret what these rights mean. Too far outside my expertise to give you specific pointers.
+<br><br>
+If you know stuff about international law and you'd like to collaborate or whatever then hit me up!!
+<ol>
+    <li>
+General Assembly resolution 2200A (XXI): International Covenant on Economic, Social and Cultural Rights (1966)
+<a href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-economic-social-and-cultural-rights">Link to OHCHR</a>
+    </li>
+    <li>
+Committee on Economic, Social and Cultural Rights: Substantive Issues Arising in the Implementation of the International Covenant on Economic, Social and Cultural Rights: General Comment 12 (1999)
+<a href="https://www.ohchr.org/en/documents/general-comments-and-recommendations/ec1219995-general-comment-no-12-right-adequate-food">Link to OHCHR</a>
+    </li>
+</ol>
+
+<p>[22] Literally go and read the <a href="https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/methods-and-application-of-food-composition-laboratory/mafcl-site-pages/sr11-sr28/">USDA National Nutrient Database for Standard Reference Documentation and User Guide</a>. It is in-depth but still I felt like I understood most of what goes on in there.
+</p><p>The freedom of choice refers to things like, your choice of Atwater factors, your nitrogen to protein conversion ratio, places where there are multiple reasonable choices and you can just kind of choose any of a number of options? Mostly this would be a choice made by companies that process food. Honestly I should read up more about this.
+
+<p>[23] There are studies like the one cited below,
+where they take prison's meal plan and recalculate the amount of nutrients
+using some software package. It is a good start, but probably the nutritional data used by the researchers is the same as the one used by the prison. That makes this paper into an investigation into what we might call the internal validity of the prison's meal planning process. The matter of external validity is left alone.
+</p>
+<p>
+As a concrete example, consider what would happen if a particular food item's measured protein content in the database is too high, higher than the actual typical protein content of that food.
+The prison's meal planning software would recommend that item because it believes it is good value for money. If it does, then the produced meal will have less protein inside then the meal planner believes.
+This could in the long term mean that the incarcerated people do not get enough protein.
+The study design in the references paper is not likely to catch this.
+No shade to them though, it is an important first step.
+</p>
+<ol>
+    <li>Johnson, C., Labbé, C., Lachance, A., LeBlanc, C. P. (2022). The menu served in Canadian penitentiaries: a nutritional analysis. Nutrients, 14(16), 3400.</li>
+</ol>
+
+<p><b>[Bonus]</b>
+The benchmark data is from a letter to John Von Neumann by George Dantzig, located in the Library of Congress.
+<a href="https://sophie.huiberts.me/files/dantzig-von-neumann-1948.pdf">Link to a scan of this letter</a>.
+The book by Grier is an amazing telling of the history around this computation.
+</p>
+<ol><li>
+Grier, David Alan. When computers were human. Princeton University Press, 2013.
+</li></ol>
+
+<p>[24]
+This is from a Gurobi webinar. If you are in my field then 100 percent you should sign up for their mailing list to get all the webinar announcements.
+</p>
+
+<p>[25]
+Difficult to give an easy to understand citation here.
+Literally I learned most of what I know from talking to people directly,
+and not for lack of trying.
+The best lead I have for you is the textbook by Maros,
+or the source code for <a href="https://highs.dev/">HiGHS</a> or <a href="https://github.com/google/or-tools/tree/stable/ortools/glop">GLOP</a> if you prefer reading code I guess.
+</p>
+<ol>
+    <li>
+        Maros, I. (2002). Computational techniques of the simplex method (Vol. 61). Springer Science &amp; Business Media.
+    </li>
+</ol>
+
+<h2>Bonus!</h2>
+<p>
+I only read this after I had finished recording, but if you're reading this then I can wholeheartedly recommend <a href="https://sumrevija.si/en/issues/sum-15/">the essay "Optimize This!" by Zoë Hitzig in Šum.</a>
+</p>
+
+<p>
+Music is from Heaven Will Be Mine: LOOPS by Alec Lambert.
+<a href="https://aleclambert.bandcamp.com/album/heaven-will-be-mine-loops">Link to Alec Lambert's Bandcamp page.</a>
+</p>
+
+<p>
+The image of the onion is from the video game Hades by Supergiant Games.
+</p>
+
+</body></html
