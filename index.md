@@ -77,10 +77,13 @@ hascode = false
 <!-- Research Section -->
 ### Research
 *Selected works. [See all publications](publications)*
+
+
 {{paperswithtags selected}}
 
 
 ~~~
+</div>
     <h3>Team</h3>
     <ul>
         <li> PhD: <a href="https://eleonbach.github.io/">Eleon Bach</a>, 2022-present </li>
