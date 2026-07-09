@@ -41,7 +41,7 @@ hascode = false
 
                     <p>
                     For a longer introduction to my research, check out
-                    <a href="/files/research-statement-huiberts-web.pdf">my research statement</a>,
+                    <a href="/files/research-statement-huiberts-web.pdf">my research statement</a>.
                     More information on my professional activities can be found in
                     <a href="/files/cv-huiberts.pdf">my CV</a>.
                     </p>
