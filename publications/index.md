@@ -67,5 +67,4 @@ hascode = false
         <a class="coauteur" href="https://www.laszlovegh.eu/">László Végh</a>,
         <a class="coauteur" href="https://weltge.de/">Stefan Weltge</a>,
         <a class="coauteur" href="https://dblp.org/pid/159/1513-2.html">Xinzhi Zhang</a>.
-</div>
 ~~~
