@@ -11,12 +11,10 @@ link = "https://doi.org/" * doi
 code = ""
 video = "https://www.youtube.com/watch?v=GmTl74PUixQ"
 talk = ""
-authors = "Eleon Bach"
+authors = "Eleon Bach, Sophie Huiberts"
 
 tags = ["paper", "selected", "simplex"]
 +++
-
-# Optimal Smoothed Analysis of the Simplex Method
 
 ## PDF
 

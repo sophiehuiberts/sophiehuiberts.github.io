@@ -12,12 +12,10 @@ link = "https://doi.org/" * doi
 code = "https://github.com/sophiehuiberts/miplib-meanwidth"
 video = ""
 talk = "https://www.youtube.com/watch?v=ojUvSSIY1vY"
-authors = "Eleon Bach, Alexander Black, Sean Kafer"
+authors = "Eleon Bach, Alexander Black, Sophie Huiberts, Sean Kafer"
 
 tags = ["paper", "selected", "simplex"]
 +++
-
-# Beyond Smoothed Analysis: Analyzing the Simplex Method By-the-Book
 
 ## PDF
 

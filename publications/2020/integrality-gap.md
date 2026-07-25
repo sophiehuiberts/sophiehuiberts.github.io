@@ -16,8 +16,6 @@ authors = "Sander Borst, Daniel Dadush, Sophie Huiberts, Samarth Tiwari."
 tags = ["paper", "branch-and-bound"]
 +++
 
-# On the Integrality Gap of Binary Integer Programs with Gaussian Data
-
 ## PDF
 
 [arXiv]({{arxiv}})

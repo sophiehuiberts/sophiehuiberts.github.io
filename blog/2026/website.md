@@ -11,8 +11,6 @@ rss_description = "I am thinking of starting a blog. Hence the website redesign"
 rss_pubdate = date
 +++
 
-# Website revamp
-
 As an academic, having an online presence gives you a big leg up. Some of the key functions are:
 1. collect your papers together for easy perusal
 2. show who your advisor and advisees are (this helps editors know if you have a conflict of interest as a potential reviewer)

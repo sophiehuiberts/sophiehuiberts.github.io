@@ -16,8 +16,6 @@ authors = "Sander Borst, Daniel Dadush, Sophie Huiberts, Danish Kashaev."
 tags = ["paper", "branch-and-bound", "selected"]
 +++
 
-# A nearly optimal randomized algorithm for explorable heap selection
-
 ## PDF
 
 [arXiv]({{arxiv}})

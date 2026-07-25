@@ -11,12 +11,10 @@ link = "https://doi.org/" * doi
 code = ""
 video = "https://www.youtube.com/watch?v=RIGwD6ZTAYw"
 talk = ""
-authors = "Xinzhi Zhang, Yin Tat Lee"
+authors = "Sophie Huiberts, Yin Tat Lee, Xinzhi Zhang"
 
 tags = ["paper", "simplex"]
 +++
-
-# Upper and Lower Bounds on the Smoothed Complexity of the Simplex Method
 
 ## PDF
 

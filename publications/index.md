@@ -1,12 +1,11 @@
 +++
-title = "Publications"
+title = "Sophie Huiberts"
 hasmath = false
 hascode = false
 +++
 
-# Sophie Huiberts
-
 ## Papers
+
 {{paperswithtags paper}}
 
 ~~~

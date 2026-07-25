@@ -4,6 +4,8 @@
 Read content of page at `pg` to find the title (#)
 """
 function find_title(pg)
+    title = pagevar(pg, "title")
+    return title
     content = read(pg, String)
     m = match(r"@def\s+title\s+=\s+\"(.*)?\"", content)
     if m === nothing
@@ -63,13 +65,7 @@ function hfun_custom_taglist()::String
     for rpath in rpaths
         # recover the title of the page if there is one defined,
         # if there isn't, fallback on the path to the page
-        title = find_title(rpath * ".md")
-        if isnothing(title)
-            title = pagevar(rpath, "title")
-        end
-        if isnothing(title)
-            title = "/$rpath/"
-        end
+        title = pagevar(rpath, "title")
 
         pvd = pagevar(rpath, :date)
         if isnothing(pvd)

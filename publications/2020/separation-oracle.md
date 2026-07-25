@@ -16,8 +16,6 @@ authors = "Daniel Dadush, Christopher Hojny, Sophie Huiberts, Stefan Weltge."
 tags = ["paper"]
 +++
 
-# A Simple Method for Convex Optimization in the Oracle Model
-
 ## PDF
 
 [arXiv]({{arxiv}})

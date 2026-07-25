@@ -4,7 +4,6 @@ hasmath = false
 hascode = false
 +++
 ~~~
-            <h1 class="page__title">Scans from the library</h1>
             <p>My collection of rare pdf's.</p>
             <div class="list__item">
                 <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">

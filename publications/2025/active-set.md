@@ -17,8 +17,6 @@ authors = "Eleon Bach, Yann Disser, Sophie Huiberts, Nils Mosis"
 tags = ["paper"]
 +++
 
-# An unconditional lower bound for the active-set method in convex quadratic maximization
-
 ## PDF
 
 [arXiv]({{arxiv}})

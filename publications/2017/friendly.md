@@ -16,8 +16,6 @@ authors = "Daniel Dadush, Sophie Huiberts."
 tags = ["paper", "simplex", "smoothed"]
 +++
 
-# A Friendly Smoothed Analysis of the Simplex Method
-
 ## PDF
 
 [arXiv]({{arxiv}})

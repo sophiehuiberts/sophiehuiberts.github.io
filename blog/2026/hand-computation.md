@@ -11,8 +11,6 @@ rss_description = "Historical anecdotes."
 rss_pubdate = date
 +++
 
-# Solving LP by Hand
-
 As narrated by Dantzig in many retrospective articles, he invented linear programming in the summer of 1947 with helpful suggestions of Leonid Hurwicz and Tjalling Koopmans.
 The first computational experiment with the simplex method finished April 10th,[^NBS] 1948.
 This was the famous diet problem computation, described from Dantzig's point of view in *Linear Programming and Extensions* and described from the computer's point of view in *When Computers Were Human* (David Alan Grier).

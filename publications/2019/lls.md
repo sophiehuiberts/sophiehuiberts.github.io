@@ -13,10 +13,8 @@ video = ""
 talk = "https://www.youtube.com/watch?v=G8HJAEA1XzU"
 authors = "Daniel Dadush, Sophie Huiberts, Bento Natura,  László Végh."
 
-tags = ["paper", "selected"]
+tags = ["paper"]
 +++
-
-# A Scaling-Invariant Algorithm for Linear Programming Whose Running Time Depends Only on the Constraint Matrix
 
 ## PDF
 

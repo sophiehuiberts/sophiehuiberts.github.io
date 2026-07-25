@@ -8,7 +8,6 @@ hascode = false
 <!-- Main "about me" section -->
 <div class="row">
     <div class="col_left_home">
-        <h1 class="title">Sophie Huiberts</h1>
         <l>Researcher @ CNRS</l>
         <p>
                     I am a <a href="https://www.cnrs.fr/en">CNRS researcher</a> since fall 2023 and I am

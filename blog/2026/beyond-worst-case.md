@@ -1,6 +1,6 @@
 +++
 title = "Smoothed Analysis is Bullshit*"
-hasmath = false
+hasmath = true
 hascode = false
 
 date = Date(2026, 7, 21)
@@ -10,8 +10,6 @@ rss_title = title
 rss_description = "Honesty posting."
 rss_pubdate = date
 +++
-
-# Smoothed Analysis is Bullshit*
 
 Last week we organized a [workshop at Schloss Dagstuhl](https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/26292) on analysis of algorithms beyond the worst case.
 Here, beyond worst-case[^BWCAbook] refers to a pressing tension in the scientific study of algorithms: theory is often useless shit.[^spicy]
