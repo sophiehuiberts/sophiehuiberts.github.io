@@ -23,6 +23,74 @@
 
 <item>
   <title>
+    <![CDATA[  The Failure of Sparse Smoothed Analysis  ]]>
+  </title>
+  <link> https://sophie.huiberts.me/blog/2026/sparse-smoothed/index.html </link>
+  <guid> https://sophie.huiberts.me/blog/2026/sparse-smoothed/index.html </guid>
+  <description>
+    <![CDATA[  A proof that Dantzig&#39;s and Bland&#39;s pivot rules have exponential sparse smoothed complexity.  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  
+<p>Earlier this week I posted a list of arguments why smoothed analysis is a poor model to study the running time of the simplex method. &#40;Hence why we introduced <a href="https://arxiv.org/abs/2510.21613">by-the-book analysis</a> which has none of those problems.&#41;</p>
+<p>One thing I mentioned was that the standard Klee-Minty cube is stable under zero-preserving perturbations. Someone asked me for a proof. Since there is currently no written source for this lore, I will write a quick proof here.</p>
+<p>Let&#39;s start with some traditional Klee-Minty cubes:</p>
+\[\begin{aligned}
+\operatorname{maximize} \quad &x_d \\
+    \operatorname{subject~to} \quad & 0 \leq x_1 \leq 1 \\
+    & 0.2 x_{j-1} \leq x_j \leq 1-0.2 x_{j-1} \qquad \forall j \in \{2,\dots,d\}.
+\end{aligned}\]
+<p>Assume the inequalities are ordered as shown: first we list both inequalities for \(j=2\) and then both inequalities for \(j=3\) and so on.</p>
+<p>We shift the means slightly and then perturb all non-zero coefficients. This yields a linear program</p>
+\[\begin{aligned}
+\operatorname{maximize} \quad x_d \hphantom{\leq}& \\
+    \operatorname{subject~to} \quad  0.1 + \alpha_1 \leq& (1+\gamma_1) x_1 \\
+    & (1+\delta_1) x_1 \leq 0.9+\varepsilon_1 \\
+     0.1 + \alpha_j + (0.2 + \beta_j)  x_{j-1} \leq& (1+\gamma_j) x_j \\
+    & (1+\delta_j) x_j \leq (0.9+\varepsilon_j) - (0.2 + \eta_j) x_{j-1} \qquad \forall j \in \{2,\dots,d\}.
+\end{aligned}\]
+<p><strong>Theorem.</strong> If \(\alpha,\beta,\gamma,\delta,\varepsilon,\eta \in [-0.05,0.05]^d\) then Bland&#39;s rule takes exponentially many pivot steps.</p>
+<p><strong>Proof.</strong> We go by induction. We prove that there are exactly \(2^d\) bases, and Bland&#39;s rule will visit all bases when it starts at the basis minimizing \(x_d\) and works to maximize \(x_d\). All basic feasible solutions \(x\) satisfy \(x \in [0,1]^d\). The Bland path is reversible: if we start at the basis maximizing \(x_d\) and we use Bland&#39;s rule to minimize \(x_d\) then the same bases are visited but in reverse order.</p>
+<p>We can check the base case \(d=1\) easily. The starting basis consists of the constraint \(0.1 + \alpha_1 \leq (1+\gamma_1)x_1\) and the end basis consists of the constraint \((1+\delta_1)x_1 \leq 0.9 + \varepsilon_1\). The two basic feasible solutions \(\frac{0.1 + \alpha_1}{1+\gamma_1}\) and \(\frac{0.9+\varepsilon_1}{1+\delta_1}\) are easily verified to be in \([0,1]\).</p>
+<p>When \(d \geq 2\), assume that the induction statement has been proven for \(d-1\). The starting basis for \(d\) consists of all lower-bounding constraints: \(0.1 + \alpha_1 \leq (1+\gamma_1)x_1\) and \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1}\leq(1+\gamma_j)x_j\) for all \(j \in \{2,\dots,d\}\).</p>
+<p>Take the Bland path for \(d-1\), and append to every basis in it the constraint \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1} \leq (1+\gamma_j)x_j\). These bases are now bases for the KM-cube in \(d\) variables. The associated basic solutions are identical on coordinates \(1,\dots,d-1\) and have \(x_d = \frac{0.1 + \alpha_j + (0.2+\beta_j)x_{d-1}}{1+\gamma_j}\). The Bland path for \(d-1\) contains \(2^{d-1}\) bases and increases the value of \(x_{d-1}\) in every step. Since \(1+\gamma_d \in [0.95,1.05]\) and \(0.1 + \alpha_d \in [0.05,0.15]\) and \(0.2 + \beta_d \in [0.15,0.25]\) and \(x_{d-1} \in [0,1]\) we get \(x_d \in [0, 0.43]\).</p>
+<p>When we consider the constraint \((1+\delta_d)x_d \leq (0.9+\varepsilon_d)-(0.2+\eta_d)x_{d-1}\), we see that the left-hand side is at most \(1.05 \cdot 0.43 \leq 0.46\) and the right-hand side is at least \(0.85-0.25 = 0.6\). That is all we needed to check in order to verify that the bases constructed so far are feasible.</p>
+<p>Every step on our path so far is improving. Due to our chosen ordering of the inequalities, the constraint \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1} \leq (1+\gamma_j)x_j\) will not leave the basis until there is no other possible improving direction left. Hence our path so far is all part of the Bland path for our KM-cube in \(d\) variables.</p>
+<p>At the end of our path so far, Bland&#39;s rule will pivot out the constraint \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1} \leq (1+\gamma_j)x_j\) and pivot in \((1+\delta_d)x_d \leq (0.9+\varepsilon_d)-(0.2+\eta_d)x_{d-1}\), since it is the only available improving move.</p>
+<p>Now take again the Bland path for \(d-1\), but reverse its order and append to every basis in it the constraint \((1+\delta_d)x_d \leq (0.9+\varepsilon_d)-(0.2+\eta_d)x_{d-1}\). This yields \(2^{d-1}\) more bases for the \(d\)-variable KM-cube. Because we reversed the order, the Bland path is decreasing \(x_{d-1}\). Since \(0.2+\eta_d > 0\) and \(1+\delta_d > 0\), the path is thus increasing the value of \(x_d\). We have now constructed our full Bland path of \(2^d\) bases. It remains to show that these final \(2^{d-1}\) bases are feasible and in \([0,1]^d\). Note that \(1+\delta_d \in [0.95,1.05]\), \(0.9+\varepsilon_d \in [0.85,0.95]\) and \(0.2+\eta_d \in [0.15,0.25]\). Since \(x_{d-1} \in [0,1]\) we get \(x_d = \frac{0.9+\varepsilon_d - (0.2+\eta_d)x_{d-1}}{1+\delta_d} \in [0.57, 1]\). The only constraint that can lead to infeasiblity is \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1} \leq (1+\gamma_j)x_j\) but its left-hand side is at most \(0.4\) and its right-hand side is at least \(0.57\), hence the bases are all feasible. <em>QED</em></p>
+<h2 id="interpretation">Interpretation</h2>
+<p>This theorem directly shows us that Bland&#39;s rule has exponential complexity under both relative and zero-preserving smoothed analysis. When we rescale the inequalities by large numbers in the standard way, it follows directly that Dantzig&#39;s most-negative reduced cost rule has exponential complexity for relative smoothed analysis.</p>
+<p>In my <a href="https://sophie.huiberts.me/blog/2026/beyond-worst-case/">previous post</a> I interpreted the above theorem by stating that zero-preserving smoothed analysis is a dead end. While I stand by that statement, I do want to give a second possible interpretation.</p>
+<p>Namely, you can conclude that Bland&#39;s rule is just bad.<sup id="fnref:agree">[1]</sup> More specifically: Bland&#39;s rule is purely combinatorial in nature. Perturbations are &#40;stochastic&#41; geometry. It is no wonder that Bland&#39;s pivoting decisions fail to benefit from perturbations. Dantzig&#39;s rule <a href="https://www.youtube.com/watch?v&#61;tbOZvbpZp44">is also bad</a> of course. In this case, specifically because it fails to be scale-invariant with respect to rescaling the inequalities. Dantzig thus similarly fails to be a geometrically-steered pivot rule.</p>
+<p>When your pivot rule does incorporate the ambient geometry, you can do significantly better than zero-preserving smoothed analysis. In fact, in the <a href="https://arxiv.org/abs/2510.21613">by-the-book paper</a> we bound the running time of a simplex method in a much weaker probabilistic model: only the right-hand side is perturbed.<sup id="fnref:btba">[2]</sup></p>
+<p><table class="fndef" id="fndef:agree">
+    <tr>
+        <td class="fndef-backref">[1]</td>
+        <td class="fndef-content">Every practitioner will agree.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:btba">
+    <tr>
+        <td class="fndef-backref">[2]</td>
+        <td class="fndef-content">We use the semi-random shadow vertex pivot rule, which generally prefers steeper edges over shallower edges. Hence it incorporates the ambient geometry. The analysis also needs some additional minor assumptions to make the definitions make sense: RHS perturbations alone lack scale.</td>
+    </tr>
+</table>
+</p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Sophie Huiberts</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Smoothed Analysis is Bullshit*  ]]>
   </title>
   <link> https://sophie.huiberts.me/blog/2026/beyond-worst-case/index.html </link>
@@ -33,7 +101,6 @@
   
   <content:encoded>
     <![CDATA[  
-<h1 id="smoothed_analysis_is_bullshit">Smoothed Analysis is Bullshit*</h1>
 <p>Last week we organized a <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/26292">workshop at Schloss Dagstuhl</a> on analysis of algorithms beyond the worst case. Here, beyond worst-case<sup id="fnref:BWCAbook">[1]</sup> refers to a pressing tension in the scientific study of algorithms: theory is often useless shit.<sup id="fnref:spicy">[2]</sup> I mean this with love.</p>
 <p>Theoretical computer science has given us many great pieces of theory, predominantly following the classic modeling paradigm called &#39;worst-case analysis&#39;. Under this paradigm, we specify a single algorithm &#40;or class of algorithms&#41; with mathematical precision and rigor, along with the set of valid inputs. A worst-case analysis then attempts to find the worst-possible performance of the algorithm &#40;in time, memory, or output solution quality&#41;. We describe that worst-case performance as a function of the size of the input, often counted as the number of bits or number of numbers. In some parts of computation, whether modern or undergrad curriculum, worst-case analysis is a useful paradigm for understanding your algorithm&#39;s performance.</p>
 <p>Other parts of computation spit in the face of theory. Paging, SAT, graph coloring, linear programming, mixed-integer linear programming, clustering, traveling salesperson. Each of these works better, is solveable faster, or returns better quality solutions than what worst-case analysis would predict. SAT and MILP are NP-hard in theory. In practice they are easy.<sup id="fnref:explanatorycommaSATMIP">[3]</sup> The simplex method for linear programming runs in exponential time under worst-case analysis. In practice its blazingly fast.<sup id="fnref:explanatorycommaLP">[4]</sup></p>
@@ -126,7 +193,6 @@
   
   <content:encoded>
     <![CDATA[  
-<h1 id="solving_lp_by_hand">Solving LP by Hand</h1>
 <p>As narrated by Dantzig in many retrospective articles, he invented linear programming in the summer of 1947 with helpful suggestions of Leonid Hurwicz and Tjalling Koopmans. The first computational experiment with the simplex method finished April 10th,<sup id="fnref:NBS">[1]</sup> 1948. This was the famous diet problem computation, described from Dantzig&#39;s point of view in <em>Linear Programming and Extensions</em> and described from the computer&#39;s point of view in <em>When Computers Were Human</em> &#40;David Alan Grier&#41;. Notably, this computation was performed by hand: 5 people worked on this for 21 days.<sup id="fnref:letters">[2]</sup></p>
 <p><img src="https://sophie.huiberts.me/blog/2026/computers-mathtables.jpg" alt="Black and white photograph. Twelve humans sit, quite packed, in rows at small desks. Each person has a large calculator in front of them. In terms of size and button shape they look like Comptometers, but they also seem to have rounded corners and cables leading from the back. Ten of the humans I would describe as white women, one I think is a white man, and the last one is a black man. The desks have enough space for the calculator, plus maybe two pieces of paper side by side without overlap." /></p>
 <p><em>Human computers of the Mathematical Tables Project, where the 1948 diet LP computation was performed.</em></p>
@@ -196,7 +262,6 @@
   
   <content:encoded>
     <![CDATA[  
-<h1 id="website_revamp">Website revamp</h1>
 <p>As an academic, having an online presence gives you a big leg up. Some of the key functions are:</p>
 <ol>
 <li><p>collect your papers together for easy perusal</p>

@@ -33,7 +33,6 @@
   
   <content:encoded>
     <![CDATA[  
-<h1 id="solving_lp_by_hand">Solving LP by Hand</h1>
 <p>As narrated by Dantzig in many retrospective articles, he invented linear programming in the summer of 1947 with helpful suggestions of Leonid Hurwicz and Tjalling Koopmans. The first computational experiment with the simplex method finished April 10th,<sup id="fnref:NBS">[1]</sup> 1948. This was the famous diet problem computation, described from Dantzig&#39;s point of view in <em>Linear Programming and Extensions</em> and described from the computer&#39;s point of view in <em>When Computers Were Human</em> &#40;David Alan Grier&#41;. Notably, this computation was performed by hand: 5 people worked on this for 21 days.<sup id="fnref:letters">[2]</sup></p>
 <p><img src="https://sophie.huiberts.me/blog/2026/computers-mathtables.jpg" alt="Black and white photograph. Twelve humans sit, quite packed, in rows at small desks. Each person has a large calculator in front of them. In terms of size and button shape they look like Comptometers, but they also seem to have rounded corners and cables leading from the back. Ten of the humans I would describe as white women, one I think is a white man, and the last one is a black man. The desks have enough space for the calculator, plus maybe two pieces of paper side by side without overlap." /></p>
 <p><em>Human computers of the Mathematical Tables Project, where the 1948 diet LP computation was performed.</em></p>

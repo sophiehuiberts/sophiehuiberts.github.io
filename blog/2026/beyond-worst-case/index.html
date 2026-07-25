@@ -27,10 +27,11 @@
              &ensp; // &ensp;
     <a href="/scans"><b>(scans from the library)</b></a>
 </div>
-<br>
+<div class="franklin-content" style="margin-top: 1.5em;">
+   <h1>Smoothed Analysis is Bullshit*</h1>  
+</div>
 <!-- Content appended here -->
 <div class="franklin-content">
-<h1 id="smoothed_analysis_is_bullshit"><a href="#smoothed_analysis_is_bullshit" class="header-anchor">Smoothed Analysis is Bullshit*</a></h1>
 <p>Last week we organized a <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/26292">workshop at Schloss Dagstuhl</a> on analysis of algorithms beyond the worst case. Here, beyond worst-case<sup id="fnref:BWCAbook"><a href="#fndef:BWCAbook" class="fnref">[1]</a></sup> refers to a pressing tension in the scientific study of algorithms: theory is often useless shit.<sup id="fnref:spicy"><a href="#fndef:spicy" class="fnref">[2]</a></sup> I mean this with love.</p>
 <p>Theoretical computer science has given us many great pieces of theory, predominantly following the classic modeling paradigm called &#39;worst-case analysis&#39;. Under this paradigm, we specify a single algorithm &#40;or class of algorithms&#41; with mathematical precision and rigor, along with the set of valid inputs. A worst-case analysis then attempts to find the worst-possible performance of the algorithm &#40;in time, memory, or output solution quality&#41;. We describe that worst-case performance as a function of the size of the input, often counted as the number of bits or number of numbers. In some parts of computation, whether modern or undergrad curriculum, worst-case analysis is a useful paradigm for understanding your algorithm&#39;s performance.</p>
 <p>Other parts of computation spit in the face of theory. Paging, SAT, graph coloring, linear programming, mixed-integer linear programming, clustering, traveling salesperson. Each of these works better, is solveable faster, or returns better quality solutions than what worst-case analysis would predict. SAT and MILP are NP-hard in theory. In practice they are easy.<sup id="fnref:explanatorycommaSATMIP"><a href="#fndef:explanatorycommaSATMIP" class="fnref">[3]</a></sup> The simplex method for linear programming runs in exponential time under worst-case analysis. In practice its blazingly fast.<sup id="fnref:explanatorycommaLP"><a href="#fndef:explanatorycommaLP" class="fnref">[4]</a></sup></p>
@@ -100,9 +101,10 @@
 </table>
 </p>
 <footer>
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Sophie Huiberts. Last modified: July 21, 2026.
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Sophie Huiberts.
+     2026-07-21.
     <br>
-    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>
 </footer>
 </div><!-- CONTENT ENDS HERE -->
     
