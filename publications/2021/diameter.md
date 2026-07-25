@@ -13,7 +13,7 @@ video = ""
 talk = "https://www.youtube.com/watch?v=wFXc_Qtgmtg"
 authors = "Gilles Bonnet, Daniel Dadush, Uri Grupel, Sophie Huiberts, Galyna Livshyts."
 
-tags = ["paper", "simplex"]
+tags = ["paper", "simplex", "selected"]
 +++
 
 ## PDF

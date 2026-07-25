@@ -13,7 +13,7 @@ video = ""
 talk = "https://www.youtube.com/watch?v=W653URJ8uCY"
 authors = "Sander Borst, Daniel Dadush, Sophie Huiberts, Danish Kashaev."
 
-tags = ["paper", "branch-and-bound", "selected"]
+tags = ["paper", "branch-and-bound"]
 +++
 
 ## PDF

@@ -16,14 +16,13 @@ IMPORTANT NOTE:
 -->
 
 {{insert head.html}}
-<body>
   <div class="franklin-content">
     {{ispage tag/blog/*}}
       <h1>All Posts</h1>
     {{else}}
       <h1>Tag: {{fill fd_tag}}</h1>
     {{end}}
-    
+
     <p>
       {{custom_taglist}}
       <!-- <a href="/"><b>(back)</b></a> -->

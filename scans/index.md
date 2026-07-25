@@ -2,6 +2,8 @@
 title = "Scans from the Library"
 hasmath = false
 hascode = false
+
+date = Date(2026,7,25)
 +++
 ~~~
             <p>My collection of rare pdf's.</p>

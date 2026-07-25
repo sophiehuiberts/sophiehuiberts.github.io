@@ -2,6 +2,8 @@
 title = "Sophie Huiberts"
 hasmath = false
 hascode = false
+
+date = Date(2026,7,25)
 +++
 
 ~~~
