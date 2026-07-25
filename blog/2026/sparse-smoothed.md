@@ -93,6 +93,7 @@ Dantzig thus similarly fails to be a geometrically-steered pivot rule.
 
 When your pivot rule does incorporate the ambient geometry, you can do significantly better than zero-preserving smoothed analysis.
 In fact, in the [by-the-book paper](https://arxiv.org/abs/2510.21613) we bound the running time of a simplex method in a much weaker probabilistic model: only the right-hand side is perturbed.[^btba]
+That is part of why we are so proud of the BTB paper: its both mathematically stronger and scientifically more robust than what we had before.
 
 
 [^agree]: Every practitioner will agree.
