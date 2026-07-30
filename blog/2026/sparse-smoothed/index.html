@@ -28,7 +28,7 @@
     <a href="/scans"><b>(scans from the library)</b></a>
 </div>
 <div class="franklin-content" style="margin-top: 1.5em;">
-   <h1>The Failure of Sparse Smoothed Analysis</h1>  
+   <h1>The Failure of Sparse Smoothed Analysis</h1> 
 </div>
 <!-- Content appended here -->
 <div class="franklin-content">
@@ -63,6 +63,19 @@
 <p>In my <a href="/blog/2026/beyond-worst-case/">previous post</a> I interpreted the above theorem by stating that zero-preserving smoothed analysis is a dead end. While I stand by that statement, I do want to give a second possible interpretation.</p>
 <p>Namely, you can conclude that Bland&#39;s rule is just bad.<sup id="fnref:agree"><a href="#fndef:agree" class="fnref">[1]</a></sup> More specifically: Bland&#39;s rule is purely combinatorial in nature. Perturbations are &#40;stochastic&#41; geometry. It is no wonder that Bland&#39;s pivoting decisions fail to benefit from perturbations. Dantzig&#39;s rule <a href="https://www.youtube.com/watch?v&#61;tbOZvbpZp44">is also bad</a> of course. In this case, specifically because it fails to be scale-invariant with respect to rescaling the inequalities. Dantzig thus similarly fails to be a geometrically-steered pivot rule.</p>
 <p>When your pivot rule does incorporate the ambient geometry, you can do significantly better than zero-preserving smoothed analysis. In fact, in the <a href="https://arxiv.org/abs/2510.21613">by-the-book paper</a> we bound the running time of a simplex method in a much weaker probabilistic model: only the right-hand side is perturbed.<sup id="fnref:btba"><a href="#fndef:btba" class="fnref">[2]</a></sup> That is part of why we are so proud of the BTB paper: its both mathematically stronger and scientifically more robust than what we had before.</p>
+<h3 id="update_300726"><a href="#update_300726" class="header-anchor">UPDATE 30/07/26</a></h3>
+<p>I did a bit more lit search after posting. Tuns out that Bland&#39;s rule was already mentioned to have exponential running time under zero-preserving smoothed analysis, as mentioned in <a href="https://www.cs.yale.edu/homes/spielman/BAP/lect14.pdf">Dan Spielman&#39;s lecture notes</a> from 2002&#33; A slightly different model was studied by <a href="https://doi.org/10.1145/3564246.3585220">Miranda Christ and Mihalis Yannakakis</a>, who perturb the non-zero transition probabilities in an MDP. They find MDP&#39;s with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> states for which adversarial zero-preserving perturbations of magnitude at most <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">1/n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/</span><span class="mord mathnormal">n</span></span></span></span> take time <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><msqrt><mi>n</mi></msqrt></msup></mrow><annotation encoding="application/x-tex">2^{\sqrt{n}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9271em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9271em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8059em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight" style="padding-left:0.833em;"><span class="mord mathnormal mtight">n</span></span></span><span style="top:-2.7659em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail mtight" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2341em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span> to be solved when using a simplex method with Dantzig&#39;s pivot rule on the standard LP formulation.</p>
 <p><table class="fndef" id="fndef:agree">
     <tr>
         <td class="fndef-backref"><a href="#fnref:agree">[1]</a></td>
