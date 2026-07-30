@@ -95,6 +95,12 @@ When your pivot rule does incorporate the ambient geometry, you can do significa
 In fact, in the [by-the-book paper](https://arxiv.org/abs/2510.21613) we bound the running time of a simplex method in a much weaker probabilistic model: only the right-hand side is perturbed.[^btba]
 That is part of why we are so proud of the BTB paper: its both mathematically stronger and scientifically more robust than what we had before.
 
+### UPDATE 30/07/26
+I did a bit more lit search after posting.
+Tuns out that Bland's rule was already mentioned to have exponential running time under zero-preserving smoothed analysis, as mentioned in [Dan Spielman's lecture notes](https://www.cs.yale.edu/homes/spielman/BAP/lect14.pdf) from 2002!
+A slightly different model was studied by [Miranda Christ and Mihalis Yannakakis](https://doi.org/10.1145/3564246.3585220), who perturb the non-zero transition probabilities in an MDP.
+They find MDP's with $n$ states for which adversarial zero-preserving perturbations of magnitude at most $1/n$ take time $2^{\sqrt{n}}$ to be solved when using a simplex method with Dantzig's pivot rule on the standard LP formulation.
+
 
 [^agree]: Every practitioner will agree.
 
