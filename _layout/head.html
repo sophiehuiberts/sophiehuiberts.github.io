@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/franklin.css">
   <!-- <link href="/css/style.css" rel="stylesheet" type="text/css"> -->
   <link href="/css/col.css" rel="stylesheet" media="screen and (min-width: 630px)" type="text/css">
-  {{isnotpage /tag/*}}{{isnotpage /publications/*}}{{isdef title}} <title>{{fill title}}</title>  {{end}}{{end}}{{end}}
+  {{isnotpage /tag/*}}{{isdef title}} <title>{{fill title}}</title>  {{end}}{{end}}
   <link rel="alternate" type="application/rss+xml" title="Sophie Huiberts Feed" href="/feed.xml" />
 
 </head>
@@ -27,6 +27,6 @@
     <a href="/scans"><b>(scans from the library)</b></a>
 </div>
 <div class="franklin-content" style="margin-top: 1.5em;">
-  {{isdef title}} <h1>{{fill title}}</h1>  {{end}}
+  {{isnotpage /tag/*}}{{isdef title}} <h1>{{fill title}}</h1> {{end}}{{end}}
 </div>
 <!-- Content appended here -->
