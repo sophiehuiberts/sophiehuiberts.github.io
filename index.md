@@ -93,6 +93,7 @@ date = Date(2026,7,25)
     <h3> Featured articles </h3>
     <p>Selected articles about my work.</p>
     <ul>
+        <li><a href="https://www.therandomsample.com.au/podcast/simplex-method/">The Random Sample podcast</a> </li>
         <li><a href="https://www.quantamagazine.org/researchers-discover-the-optimal-way-to-optimize-20251013/">Quanta Magazine</a> / <a href="https://www.wired.com/story/researchers-discover-the-optimal-way-to-optimize/">WIRED</a> </li>
         <li><a href="https://www.gurobi.com/resources/blog/women-in-optimization-dr-sophie-huiberts">Gurobi blog</a></li>
         <li><a href="https://www.lemonde.fr/sciences/article/2022/10/04/mathematiques-lumiere-sur-les-etranges-performances-de-l-algorithme-du-simplexe_6144282_1650684.html">Le Monde</a></li>
