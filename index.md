@@ -28,7 +28,7 @@ date = Date(2026,7,25)
 
                     <p>In my work, I prove theorems about algorithms.
                     Specifically, I study practical algorithms for (mixed integer) linear programming as you might find them
-                    in popular software such as Gurobi, FICO Xpress, SCIP or HiGHS.
+                    in popular software such as Gurobi, MOSEK, SCIP or HiGHS.
                     </p>
                     <p>
                     These mathematical optimization tools are used extensively
