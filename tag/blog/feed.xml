@@ -23,6 +23,44 @@
 
 <item>
   <title>
+    <![CDATA[  How to Browse the Internet  ]]>
+  </title>
+  <link> https://sophie.huiberts.me/blog/2026/internet/index.html </link>
+  <guid> https://sophie.huiberts.me/blog/2026/internet/index.html </guid>
+  <description>
+    <![CDATA[  Two underrated tools for connecting to the World Wide Web.  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  
+<p>Everything changes but everything stays the same, and the 2026 internet is no exception. Today I recommend two websites because I am a happy customer of both.</p>
+<h2 id="web_search">Web Search</h2>
+<p>Most people agree that Google is worse now than it was a decade ago. Some people blame SEO, some blame LLMs. I think Ed Zitron is right when <a href="https://www.wheresyoured.at/the-men-who-killed-google/">he describes</a> the degradation is intentional on Google&#39;s part: enshittification at work.</p>
+<p>Still, search <a href="https://arstechnica.com/gadgets/2026/08/remembering-the-pre-google-web-when-search-was-an-experiment/">is now</a> a fundamental part of how we interact with the web and we want something that works. One remedy I have heard is to use LLMs as a search engine. This is highly dubious practice in my view. Even the best models would sooner lie to your face than accurately describe the contents a simple web page.</p>
+<p>My recommendation is a search engine called <a href="https://kagi.com/">Kagi</a>. It is truly great. As good as Google was back in the day I find that Kagi consistently yields high quality and authorative sources while returning a minimum of spam and AI slop. I started using this product already back in 2023 and I recommend it to everyone.</p>
+<p>One feature worth pointing out: Kagi search is a paid product. I pay 5 dollars plus tax for up to 300 searches per month &#40;which is more than enough&#41;. Because the user pays, the user is the customer. This is unlike Google, DuckDuckGo, or most other search engines, where the user is the product. You can feel the difference in how you are treated. Six dollars is a small price to pay for a functioning web.</p>
+<h2 id="syndication">Syndication</h2>
+<p>Second recommendation is an oldy but goldy: get yourself an RSS reader. It is astounding the number of people I talk to &#40;young or old&#41; who do not use one of these.</p>
+<p>RSS is a web protocol thingy, and almost every website participates. You can load special RSS urls into a software called an RSS reader, and the software will put all the new updates from all your subscribed websites into a chronological feed.</p>
+<p>RSS is an amazing technology. You can follow your favorite newspaper, get your daily xkcd comic, and follow the latest papers in your ArXiv categories all in the same software. Every time you find a cool website, you can easily subscribe. That way you slowly build your own personal chronological feed of cool things and stay up-to-date with all you care about.</p>
+<p>There are a lot of good RSS readers out there, either local on your device or as a web app. I like <a href="https://www.inoreader.com/">Inoreader</a>, they have a comfortable free tier. Do not worry about vendor lock-in: every RSS reader I know allows to export your list of feeds to a .ompl file which you can use to move to a different product.</p>
+<p>I recommend you install a browser add-on to more easily find the RSS feed for a given webpage. On Firefox a good one is <a href="https://addons.mozilla.org/en-US/firefox/addon/want-my-rss/">Want My RSS</a>, which puts a little logo in the address bar when a feed is available. On Chrome I will not recommend anything, I don&#39;t like them because <a href="https://blog.mozilla.org/en/firefox/firefox-manifest-v3-adblockers/">they are destroying</a> their add-on ecosystem as we speak. But perhaps you can find something there too.</p>
+<p>If you are a colleague in theoretical computer science, subscribe to <a href="https://theory.report/">theory.report</a> to stay up-to-date with all the bloggers in the community. On arXiv they have <a href="https://info.arxiv.org/help/rss.html">separate feeds per category and subject class</a> you can subscribe to. RSS is by far the easiest way to see all new papers coming out. If you are in optimization, note that <a href="https://optimization-online.org/">Optimization Online</a> also has a feed.</p>
+<p><img src="https://sophie.huiberts.me/blog/2026/inoreader.png" alt="Screenshot from my Inoreader. On the side you see some of the feeds I subscribe to, such as Wikipedia featured article, Theory of Computing Blog Aggregator, kottke.org, Quanta Magazine, Wikipedia Watchlist, and a number of folders containing more feeds called art, news, misc, comics, math, cs, blogs, fictie, vids. In the main window you see individual unread articles, including some new articles from Colossal, Ars Technica, Parool and TCS Blog Aggregator, all 5 hours or less old. Also visible are some older unread articles, namely today&#39;s xkcd, one update from ArXiv math.OC, one message on dmanet, and one post from arg min blog." /></p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Sophie Huiberts</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  The Failure of Sparse Smoothed Analysis  ]]>
   </title>
   <link> https://sophie.huiberts.me/blog/2026/sparse-smoothed/index.html </link>
