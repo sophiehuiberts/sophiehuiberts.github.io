@@ -5,7 +5,7 @@ hascode = true
 
 date = Date(2019, 12, 12)
 arxiv = "https://arxiv.org/abs/1912.06252"
-venue = "IPCO 2021, Mathematical Programming"
+venue = "STOC 2020, Mathematical Programming"
 doi = "10.1007/s10107-023-01956-2"
 link = "https://doi.org/" * doi
 code = ""
