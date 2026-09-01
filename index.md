@@ -46,14 +46,7 @@ date = Date(2026,7,25)
                     More information on my professional activities can be found in
                     <a href="/files/cv-huiberts.pdf">my CV</a>.
                     </p>
-~~~
 
-### Special Announcement
-On August 30th I will be showcasing a speedrun of Hades II (2025) at [Games Done Quick](https://www.twitch.tv/gamesdonequick).
-Join the stream to watch me and my co-player Chelsea.
-See [the schedule](https://gamesdonequick.com/schedule/67#hades-ii-fresh-file) for the exact time in your zone.
-
-~~~
                     <h3>Sophie online</h3>
         <div style="text-align: center;"><a href="mailto:sophie@huiberts.me">email</a>&ensp;//&ensp;<a href="https://dblp.uni-trier.de/pid/210/1008.html">dblp</a>&ensp;//&ensp;<a href="https://scholar.google.com/citations?user=s2ii11EAAAAJ">scholar</a>&ensp;//&ensp;<a href='https://www.youtube.com/@sophiehuiberts'>youtube</a>&ensp;//&ensp;<a href='https://bsky.app/profile/sophie.huiberts.me' rel="me">bluesky</a>&ensp;//&ensp;<a href='https://mathstodon.xyz/@SophieHuiberts' rel="me">mastodon</a></div>
                     <p>
