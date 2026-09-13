@@ -77,7 +77,7 @@ date = Date(2026,7,25)
 
 
 <!-- Research Section -->
-### Research
+## Research
 *Selected works. [See all publications](publications)*
 
 
@@ -96,12 +96,16 @@ date = Date(2026,7,25)
     <ul>
         <li><a href="https://www.therandomsample.com.au/podcast/simplex-method/">The Random Sample podcast</a> </li>
         <li><a href="https://www.quantamagazine.org/researchers-discover-the-optimal-way-to-optimize-20251013/">Quanta Magazine</a> / <a href="https://www.wired.com/story/researchers-discover-the-optimal-way-to-optimize/">WIRED</a> </li>
-        <li><a href="https://www.gurobi.com/resources/blog/women-in-optimization-dr-sophie-huiberts">Gurobi blog</a></li>
         <li><a href="https://www.lemonde.fr/sciences/article/2022/10/04/mathematiques-lumiere-sur-les-etranges-performances-de-l-algorithme-du-simplexe_6144282_1650684.html">Le Monde</a></li>
     </ul>
 ~~~
+
+## Teaching
+In fall 2026 I am teaching an M2 course at ENS Lyon jointly with Alantha Newman on Theory of (Linear) Optimization and Approximation Algorithms.
+You can [find my lecture notes here](/files/lyon2026.pdf).
+
 <!-- Blog Section -->
-### Blog
+## Blog
 *Recent posts:*
 ~~~<br>~~~
 {{recentblogposts}}
