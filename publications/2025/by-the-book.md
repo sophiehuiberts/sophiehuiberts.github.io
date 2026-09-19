@@ -31,7 +31,6 @@ tags = ["paper", "selected", "simplex"]
   publisher = {ACM},
   author = {Bach,  Eleon and Black,  Alexander E. and Huiberts,  Sophie and Kafer,  Sean},
   year = {2026},
-  month = June,
   pages = {222–233},
   eprint={2510.21613},
   archivePrefix={arXiv},
