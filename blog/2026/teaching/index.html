@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+  
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/franklin.css">
+  <!-- <link href="/css/style.css" rel="stylesheet" type="text/css"> -->
+  <link href="/css/col.css" rel="stylesheet" media="screen and (min-width: 630px)" type="text/css">
+   <title>Principles for Teaching Linear Programming</title>  
+  <link rel="alternate" type="application/rss+xml" title="Sophie Huiberts Feed" href="/feed.xml" />
+
+</head>
+<body>
+
+
+
+<div class="franklin-content" style="margin-top: 1.5em;">
+    <a href="/"><b>(home)</b></a>
+             &ensp; // &ensp;
+    <a href="/publications"><b>(publications)</b></a>
+             &ensp; // &ensp;
+    <a href="/tag/blog"><b>(blog)</b></a>
+             &ensp; // &ensp;
+    <a href="/scans"><b>(scans from the library)</b></a>
+</div>
+<div class="franklin-content" style="margin-top: 1.5em;">
+   <h1>Principles for Teaching Linear Programming</h1> 
+</div>
+<!-- Content appended here -->
+<div class="franklin-content">
+<p>This semester I am teaching a class together with Alantha Newman at ENS Lyon. My half of the course is on the simplex method and linear programming. In this blog post, I will outline the principles of how <em>I</em> think linear programming should be taught.</p>
+<h2 id="no_tableau"><a href="#no_tableau" class="header-anchor">No Tableau</a></h2>
+<p>It is my firm belief that nobody has ever learned anything from a simplex tableau. Personally, despite being a well-recognized researcher in LP, I do not understand them. I could not pivot a step if you gave me a thousand dollars. As such, I would never ask a student to learn how to do this either.</p>
+<h2 id="inequality_form"><a href="#inequality_form" class="header-anchor">Inequality Form</a></h2>
+<p>The only linear program worth writing down is of the form</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mi mathvariant="normal">maximize</mi><mo>⁡</mo><mspace width="1em"/></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><msup><mi>c</mi><mi>T</mi></msup><mi>x</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mi mathvariant="normal">subject to</mi><mo>⁡</mo><mspace width="1em"/></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mi>A</mi><mi>x</mi><mo>≤</mo><mi>b</mi><mi mathvariant="normal">.</mi></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\operatorname{maximize} \quad &amp;c^T x \\
+    \operatorname{subject~to} \quad &amp; A x \leq b.
+\end{aligned}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.0513em;vertical-align:-1.2757em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.7757em;"><span style="top:-3.8843em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mord mathrm">maximize</span></span><span class="mspace" style="margin-right:1em;"></span></span></span><span style="top:-2.3843em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mord mathrm">subject to</span></span><span class="mspace" style="margin-right:1em;"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2757em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.7757em;"><span style="top:-3.8843em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span><span class="mord mathnormal">x</span></span></span><span style="top:-2.3843em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">b</span><span class="mord">.</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2757em;"><span></span></span></span></span></span></span></span></span></span></span></span>
+<p>In particular: standard form &#40;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>x</mi><mo>=</mo><mi>b</mi><mo separator="true">,</mo><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Ax = b, x \geq 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>&#41; and canonical form &#40;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>x</mi><mo>≤</mo><mi>b</mi><mo separator="true">,</mo><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Ax \leq b, x \geq 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8193em;vertical-align:-0.136em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>&#41; are banned. When you permit variable bounds as part of your notation, you commit a type error. An index should be <em>either</em> a variable index <em>or</em> a constraint index. Variable bounds like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\geq 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> demand you use a single index both to indicate a variable <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and a constraint <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x_i \geq 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.786em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>. This is a terrible situation that must be avoided at all costs.</p>
+<h3 id="pros_and_cons"><a href="#pros_and_cons" class="header-anchor">Pros and Cons</a></h3>
+<p>Sticking to inequality form has many other benefits including:</p>
+<ul>
+<li><p>you can draw pictures of your LPs, where a 3D picture is for an LP with 3 variables. In equality form this is is impossible</p>
+</li>
+<li><p>Newtonian mechanics&#39; provides a clean intuition for deriving duality. The law <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">F=ma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ma</span></span></span></span> provides a clean analog for Farkas&#39; Lemma, and in turn complementary slackness becomes the most intuitive fact in the world.</p>
+</li>
+<li><p>The simplex method is much easier to represent in inequalty than in equality form. In particular the expression <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>−</mo><mi>A</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">b-Ax</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">x</span></span></span></span> gets to be reserved for slacks &#40;which makes sense&#41; instead of being forced into the role of reduced cost &#40;which does not make sense&#41;.</p>
+</li>
+</ul>
+<p>The only meaningful downside is if you want to cover interior-point methods. Something like a log-barrier IPM is much simpler in equality form.</p>
+<h2 id="no_theoretical_nonsense"><a href="#no_theoretical_nonsense" class="header-anchor">No Theoretical Nonsense</a></h2>
+<p>As Harris so eloquently puts it: &quot;Linear programming is a practical technique and not a mathematical exercise.&#39; Therefore, we shall not waste any class time on nonsense that only exists in theory.</p>
+<ul>
+<li><p>Degenerate pivot steps do not exist.</p>
+</li>
+<li><p>We only mention Bland&#39;s pivot rule in order to make fun of it.</p>
+</li>
+<li><p>We only mention Dantzig&#39;s pivot rule in order to have a healthy discussion about scale-invariance.</p>
+</li>
+</ul>
+<p>The matter of degeneracy is a complicated one. Everything from its definitions, its causes, implications and remedies are vastly different in theory and in practice. I am not aware of any comprehensive academic publications describing degeneracy in practice, and I do not respect the theoretical approaches to it. Thus, ignoring its existence is the only way forward. This way we have time to talk about the more important things in life.</p>
+<h2 id="lecture_notes"><a href="#lecture_notes" class="header-anchor">Lecture Notes</a></h2>
+<p>I post <a href="/files/lyon2026.pdf">my lecture notes</a> online, and typically are only a week or two behind class schedule haha. If you have any comments, do give me a shout. I love to hear from you.</p>
+<footer>
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Sophie Huiberts.
+     2026-09-28.
+    <br>
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>
+</footer>
+</div><!-- CONTENT ENDS HERE -->
+    
+        
+
+
+
+    
+    
+  </body>
+</html>

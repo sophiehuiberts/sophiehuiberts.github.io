@@ -23,6 +23,64 @@
 
 <item>
   <title>
+    <![CDATA[  Principles for Teaching Linear Programming  ]]>
+  </title>
+  <link> https://sophie.huiberts.me/blog/2026/teaching/index.html </link>
+  <guid> https://sophie.huiberts.me/blog/2026/teaching/index.html </guid>
+  <description>
+    <![CDATA[  Philosophy about what to teach when teaching LP  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  
+<p>This semester I am teaching a class together with Alantha Newman at ENS Lyon. My half of the course is on the simplex method and linear programming. In this blog post, I will outline the principles of how <em>I</em> think linear programming should be taught.</p>
+<h2 id="no_tableau">No Tableau</h2>
+<p>It is my firm belief that nobody has ever learned anything from a simplex tableau. Personally, despite being a well-recognized researcher in LP, I do not understand them. I could not pivot a step if you gave me a thousand dollars. As such, I would never ask a student to learn how to do this either.</p>
+<h2 id="inequality_form">Inequality Form</h2>
+<p>The only linear program worth writing down is of the form</p>
+\[\begin{aligned}
+\operatorname{maximize} \quad &c^T x \\
+    \operatorname{subject~to} \quad & A x \leq b.
+\end{aligned}\]
+<p>In particular: standard form &#40;\(Ax = b, x \geq 0\)&#41; and canonical form &#40;\(Ax \leq b, x \geq 0\)&#41; are banned. When you permit variable bounds as part of your notation, you commit a type error. An index should be <em>either</em> a variable index <em>or</em> a constraint index. Variable bounds like \(x\geq 0\) demand you use a single index both to indicate a variable \(x_i\) and a constraint \(x_i \geq 0\). This is a terrible situation that must be avoided at all costs.</p>
+<h3 id="pros_and_cons">Pros and Cons</h3>
+<p>Sticking to inequality form has many other benefits including:</p>
+<ul>
+<li><p>you can draw pictures of your LPs, where a 3D picture is for an LP with 3 variables. In equality form this is is impossible</p>
+</li>
+<li><p>Newtonian mechanics&#39; provides a clean intuition for deriving duality. The law \(F=ma\) provides a clean analog for Farkas&#39; Lemma, and in turn complementary slackness becomes the most intuitive fact in the world.</p>
+</li>
+<li><p>The simplex method is much easier to represent in inequalty than in equality form. In particular the expression \(b-Ax\) gets to be reserved for slacks &#40;which makes sense&#41; instead of being forced into the role of reduced cost &#40;which does not make sense&#41;.</p>
+</li>
+</ul>
+<p>The only meaningful downside is if you want to cover interior-point methods. Something like a log-barrier IPM is much simpler in equality form.</p>
+<h2 id="no_theoretical_nonsense">No Theoretical Nonsense</h2>
+<p>As Harris so eloquently puts it: &quot;Linear programming is a practical technique and not a mathematical exercise.&#39; Therefore, we shall not waste any class time on nonsense that only exists in theory.</p>
+<ul>
+<li><p>Degenerate pivot steps do not exist.</p>
+</li>
+<li><p>We only mention Bland&#39;s pivot rule in order to make fun of it.</p>
+</li>
+<li><p>We only mention Dantzig&#39;s pivot rule in order to have a healthy discussion about scale-invariance.</p>
+</li>
+</ul>
+<p>The matter of degeneracy is a complicated one. Everything from its definitions, its causes, implications and remedies are vastly different in theory and in practice. I am not aware of any comprehensive academic publications describing degeneracy in practice, and I do not respect the theoretical approaches to it. Thus, ignoring its existence is the only way forward. This way we have time to talk about the more important things in life.</p>
+<h2 id="lecture_notes">Lecture Notes</h2>
+<p>I post <a href="https://sophie.huiberts.me/files/lyon2026.pdf">my lecture notes</a> online, and typically are only a week or two behind class schedule haha. If you have any comments, do give me a shout. I love to hear from you.</p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Sophie Huiberts</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Games Done Quick  ]]>
   </title>
   <link> https://sophie.huiberts.me/blog/2026/gdq/index.html </link>
