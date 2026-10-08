@@ -3,7 +3,7 @@ title = "Sophie Huiberts"
 hasmath = false
 hascode = false
 
-date = Date(2026,7,25)
+date = Date(2026,10,08)
 +++
 
 ~~~
@@ -111,3 +111,12 @@ You can [find my lecture notes here](/files/lyon2026.pdf).
 {{recentblogposts}}
 ~~~<br>~~~
 [All posts](/tag/blog) / [RSS feed](/feed.xml)
+
+## AI statement
+My mathematical work, as well as my writing, remain free from LLM involvement.
+The thought of outsourcing either of those to the robots fills me with little but sadness.
+For that reason I do ask my collaborators to not use LLMs in our joint projects.
+
+At the same time, I can see a future where we use robots to take up research projects of previously-unimaginable scale and scope.
+That future will be good in its own way.
+Whichever way the field goes regarding LLM usage, there will remain fruitful mathematical work to be done for ourselves and for future cohorts of researchers.
