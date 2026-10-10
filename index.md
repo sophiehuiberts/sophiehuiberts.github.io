@@ -59,11 +59,13 @@ date = Date(2026,10,08)
                     <p>
                         In order to stay connected with my long-distance scientific community,
                         I am active on the microblogging platforms.
-                        Moreover, I do my best to produce high-quality video recordings of my research talks.
+                        If you are considering joining one, I would suggest Bluesky.
+                        There is an active community of theoretical computer scientists there.
                     </p>
 
                     <p>
-                        I encourage others in my community to up their game in recorded talks as well.
+                        I do my best to produce high-quality video recordings of my research talks to put online.
+                        I also encourage others in my community to up their game in recorded talks as well.
                         For that reason, I manage the <a href="https://www.youtube.com/@eatcs">EATCS YouTube channel</a> together with <a href="https://iuuk.mff.cuni.cz/~iwmertz/">Ian Mertz</a>.
                         Contributions are welcome. Send me an email.
                     </p>
@@ -113,10 +115,14 @@ You can [find my lecture notes here](/files/lyon2026.pdf).
 [All posts](/tag/blog) / [RSS feed](/feed.xml)
 
 ## AI statement
-My mathematical work, as well as my writing, remain free from LLM involvement.
-The thought of outsourcing either of those to the robots fills me with little but sadness.
-For that reason I do ask my collaborators to not use LLMs in our joint projects.
+My mathematical work and my writing remain free from LLM involvement.
+The thought of outsourcing either of those to robots fills me with little but sadness.
+For that reason I ask my collaborators to not use LLMs in our joint projects.
+I expect that I can continue this way of working for as long as I want without 'falling behind'.
+I believe that this strategy of non-use is available not only to tenured researchers like myself but also to junior academics for generations to come.
 
-At the same time, I can see a future where we use robots to take up research projects of previously-unimaginable scale and scope.
+At the same time, I can see a future where mathematicians use open-source robots to take up research projects of previously-unimaginable scale and scope.
 That future will be good in its own way.
-Whichever way the field goes regarding LLM usage, there will remain fruitful mathematical work to be done for ourselves and for future cohorts of researchers.
+
+Whichever way the field goes regarding LLM usage, there will remain fruitful mathematical work to be done.
+The demand for mathematical thinking, and for humans who can do that thinking, is going nowhere.
