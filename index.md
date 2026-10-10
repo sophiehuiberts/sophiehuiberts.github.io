@@ -114,6 +114,8 @@ You can [find my lecture notes here](/files/lyon2026.pdf).
 ~~~<br>~~~
 [All posts](/tag/blog) / [RSS feed](/feed.xml)
 
+For more blogs in theoretical computer science, check out the aggregator at [theory.report](https://theory.report/).
+
 ## AI statement
 My mathematical work and my writing remain free from LLM involvement.
 The thought of outsourcing either of those to robots fills me with little but sadness.

@@ -136,9 +136,7 @@ function hfun_recentblogposts(params=nothing)::String
         pvd = pagevar(path, :date)
 
         write(io, """<a href="$l">$t</a> <date>($(Dates.format(pvd, "u d, yyyy")))</date><br>\n""")
-        if i >= 4
-            # show "view all"
-            write(io, "<b><a href=\"/tag/blog\">all posts</a></b><br>")
+        if i >= 5
             break
         end
     end
