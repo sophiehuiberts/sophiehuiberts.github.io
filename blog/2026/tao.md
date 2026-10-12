@@ -29,7 +29,7 @@ If you post unpolished manuscripts to the arXiv, you are embarrassing yourself.
 
 Compare this to OpenAI's behavior.
 They do not care about their "preprints".
-They don't bother putting in appropriate attribution of ideas, they salami-slice 372 result over 719 pdfs, their work [contains retraction-worthy errors](https://bsky.app/profile/curiouscoding.nl/post/3mxeerfpahk2u), and their proofs are fiendishly hard to parse.
+They don't bother putting in appropriate attribution of ideas, they salami-slice 372 results over 719 pdfs, their work [contains retraction-worthy errors](https://bsky.app/profile/curiouscoding.nl/post/3mxeerfpahk2u), they [promise code but neglect to include it](https://bsky.app/profile/dulwichquantum.bsky.social/post/3mxlpp3tuv226), and their proofs are fiendishly hard to parse.
 Their pdfs actively set back the state of the literature.
 This is poor quality work and these pdfs are all easy rejects.
 
