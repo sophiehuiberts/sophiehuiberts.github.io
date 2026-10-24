@@ -63,10 +63,13 @@ If you have only 3 papers to show off your skills as a researcher, it would be b
 A paper like that neither demonstrates your capabilities, nor does it illustrate what you spend your time on.
 
 A good paper, one which increases your chances of getting hired, is one that represents a large fraction of your research time, reflects your standard of work, and conveys which subjects you consider interesting enough to spend effort on.
-
 In your research statement, you describe what type of work you have done, what you value, and what you plan to do.
 Your three papers you choose to best support your story.
-It is up to the hiring committee to then look at everyone's stories, including the implicit or explicit messages about LLM use, and select applicants based on the institution's priorities.
+
+It is up to the hiring committee to then look at everyone's stories, including the implicit or explicit messages about LLM use, and select applicants based on the committee's priorities.
+That is where pluralism reigns: there are no priorities that all scientists or all committees would agree.
+As Feyerabend would say, 'anything goes.'
+Focus on presenting yourself in a way that you are proud of, and by applying to jobs you will eventually find employment and colleagues that mesh with how _you_ approach mathematical work.
 
 == Why is This Good?
 
@@ -79,5 +82,14 @@ You cannot attach slop to your application, because the hiring committee will _a
 
 The three-paper meta has been favored for years already at all respectable institutions.
 In today's mathematically uncertain times these hiring strategies are more desireable than ever before.
+
+== Conclusion
+
+The three-paper meta already exists, it is prevalent enough that young researchers can build their careers on this.
+I personally did so. I publish ~1 paper per year and have never worried about pressure to publish more.
+That strategy has let me build a body of work that I am proud of, and has led to stable employment.
+The same has worked for many of my friends and colleagues.
+
+Publish-or-perish is only real if you choose to believe it, and paper counting only affects you if you let it.
 
 [^meta]: In video game culture, the _meta_ refers to the current dominant strategy for playing. Partly the meta is the current Nash equilibirium, partly it is the current state-of-the-art knowledge of optimal play. A game's meta can evolve based on outside circumstances (rules changes, new content being released) or inside circumstances (new strategies are found and disseminated, new counterplay is found).
