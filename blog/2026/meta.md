@@ -3,7 +3,7 @@ title = "The New Hiring/Job Search Meta"
 hasmath = false
 hascode = false
 
-date = Date(2026, 10, 22)
+date = Date(2026, 10, 26)
 tags = ["blog"]
 
 rss_title = title
@@ -87,9 +87,10 @@ In today's mathematically uncertain times these hiring strategies are more desir
 
 The three-paper meta already exists, it is prevalent enough that young researchers can build their careers on this.
 I personally did so. I publish ~1 paper per year and have never worried about pressure to publish more.
-That strategy has let me build a body of work that I am proud of, and has led to stable employment.
+That strategy has let me build a body of work that I am proud of, and has also led to stable employment.
 The same has worked for many of my friends and colleagues.
 
-Publish-or-perish is only real if you choose to believe it, and paper counting only affects you if you let it.
+If we wish to reduce the phenomenon of AI slop flag planting, the main thing we need is for the alternative strategy (publishing lots of low-effort papers) to further lose out for young people.
+Hence, it is high time for bean-counters to step back and let their deparments enter the 21st century.
 
 [^meta]: In video game culture, the _meta_ refers to the current dominant strategy for playing. Partly the meta is the current Nash equilibirium, partly it is the current state-of-the-art knowledge of optimal play. A game's meta can evolve based on outside circumstances (rules changes, new content being released) or inside circumstances (new strategies are found and disseminated, new counterplay is found).

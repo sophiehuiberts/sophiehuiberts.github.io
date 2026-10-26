@@ -10,8 +10,8 @@ venue = "STOC 2026"
 doi = "10.1145/3798129.3800742"
 link = "https://doi.org/" * doi
 code = "https://github.com/sophiehuiberts/miplib-meanwidth"
-video = ""
-talk = "https://www.youtube.com/watch?v=ojUvSSIY1vY"
+video = "https://www.youtube.com/watch?v=En5RPVXejqc"
+talk = ""
 authors = "Eleon Bach, Alexander Black, Sophie Huiberts, Sean Kafer"
 
 tags = ["paper", "selected", "simplex"]
