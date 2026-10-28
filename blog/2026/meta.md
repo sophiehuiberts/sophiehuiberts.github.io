@@ -25,7 +25,7 @@ Advisors are also unsure how to help their students.
 I am here to tell you, that Europe has solved all these problems.
 The next meta[^meta] has already been invented, and once American institutions catch up to this strategy then the career game theory will work itself out to a comfortable place for everyone.
 
-== Three Papers
+## Three Papers
 Every [respectable institution](https://sfdora.org/signers/) knows that bibliometrics are cringe.
 Research assesment cannot be based on counting somebody's number of papers, nor can it be based on seeing which journal or conference those papers appeared in.
 This is a broadly supported norm, even if some people still struggle.
@@ -41,7 +41,7 @@ These 3 papers are in addition to a CV (including publication list) and research
 The committee will look at the attached papers to evaluate the quality of the candidate's past work, and look at the research statement to estimate the quality of their future work.
 The role of the full publication list is merely to support the case that the candidate has the required experience to credibly execute on their promised future plans.
 
-== The Meta for Institutions
+## The Meta for Institutions
 
 This phenomenon, of a limited number of papers considered for evaluation, is widespread but not universal.
 In the UK this principle is part of the national evaluation of universities.
@@ -57,7 +57,7 @@ For institutions, following this evaluation meta allows you to hire responsible 
 Those backwards institutions who still count papers and venues become less attractive places to work, because nobody wants to live under the leadership of bean counters.
 Such institutions get a bad reputation and are left to hire the salami-slicers among the talent pool.
 
-== The Meta for Applicants
+## The Meta for Applicants
 
 If you have only 3 papers to show off your skills as a researcher, it would be bad strategy to use 1 of those slots on your ChatGPT weekend project.
 A paper like that neither demonstrates your capabilities, nor does it illustrate what you spend your time on.
@@ -71,7 +71,7 @@ That is where pluralism reigns: there are no priorities that all scientists or a
 As Feyerabend would say, 'anything goes.'
 Focus on presenting yourself in a way that you are proud of, and by applying to jobs you will eventually find employment and colleagues that mesh with how _you_ approach mathematical work.
 
-== Why is This Good?
+## Why is This Good?
 
 In the age of robots, the European meta is more desireable than ever before.
 The game theory for junior researchers is clear: any time you spend effort on a new paper, it should at least beat your 3rd best ever paper in quality.
@@ -83,7 +83,7 @@ You cannot attach slop to your application, because the hiring committee will _a
 The three-paper meta has been favored for years already at all respectable institutions.
 In today's mathematically uncertain times these hiring strategies are more desireable than ever before.
 
-== Conclusion
+## Conclusion
 
 The three-paper meta already exists, it is prevalent enough that young researchers can build their careers on this.
 I personally did so. I publish ~1 paper per year and have never worried about pressure to publish more.
