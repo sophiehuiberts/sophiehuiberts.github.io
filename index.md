@@ -7,7 +7,6 @@ date = Date(2026,10,08)
 +++
 
 ~~~
-<!-- Main "about me" section -->
 <div class="row">
     <div class="col_left_home">
         <l>Researcher @ CNRS</l>
@@ -65,9 +64,10 @@ date = Date(2026,10,08)
 
                     <p>
                         I do my best to produce high-quality video recordings of my research talks to put online.
+                        My most recent video is on <a href="https://www.youtube.com/watch?v=En5RPVXejqc">by-the-book analysis</a>.
                         I also encourage others in my community to up their game in recorded talks as well.
                         For that reason, I manage the <a href="https://www.youtube.com/@eatcs">EATCS YouTube channel</a> together with <a href="https://iuuk.mff.cuni.cz/~iwmertz/">Ian Mertz</a>.
-                        Contributions are welcome. Send me an email.
+                        Contributions are welcome. Send me or Ian an email.
                     </p>
     </div>
     <div class="col_right_home" style="padding-top: 50px;">
@@ -78,7 +78,6 @@ date = Date(2026,10,08)
 ~~~
 
 
-<!-- Research Section -->
 ## Research
 *Selected works. [See all publications](publications)*
 
@@ -106,7 +105,6 @@ date = Date(2026,10,08)
 In fall 2026 I am teaching an M2 course at ENS Lyon jointly with Alantha Newman on Theory of (Linear) Optimization and Approximation Algorithms.
 You can [find my lecture notes here](/files/lyon2026.pdf).
 
-<!-- Blog Section -->
 ## Blog
 *Recent posts:*
 ~~~<br>~~~
