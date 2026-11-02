@@ -15,13 +15,13 @@
 </url>
 <url>
     <loc>https://sophie.huiberts.me/publications/2019/lls/index.html</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://sophie.huiberts.me/publications/2025/active-set/index.html</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -57,7 +57,7 @@
 </url>
 <url>
     <loc>https://sophie.huiberts.me/publications/2025/by-the-book/index.html</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -69,7 +69,7 @@
 </url>
 <url>
     <loc>https://sophie.huiberts.me/blog/2026/meta/index.html</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -87,7 +87,7 @@
 </url>
 <url>
     <loc>https://sophie.huiberts.me/index.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -136,6 +136,12 @@
 <url>
     <loc>https://sophie.huiberts.me/publications/index.html</loc>
     <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://sophie.huiberts.me/blog/2026/stocvid/index.html</loc>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
