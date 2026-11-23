@@ -7,7 +7,7 @@ date = Date(2026, 11, 23)
 tags = ["blog", "theory", "ai"]
 
 rss_title = title
-rss_description = "."
+rss_description = "Disclosure is not methodology."
 rss_pubdate = date
 +++
 
