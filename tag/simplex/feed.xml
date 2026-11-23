@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:georss="http://www.georss.org/georss">
+
+  <channel>
+    <title>
+      <![CDATA[  Sophie Huiberts  ]]>
+    </title>
+    <link> https://sophie.huiberts.me </link>
+    <description>
+      <![CDATA[  Theoretical computer scientist at CNRS  ]]>
+    </description>
+    <atom:link
+      href="https://sophie.huiberts.me/feed.xml"
+      rel="self"
+      type="application/rss+xml" />
+
+
+<item>
+  <title>
+    <![CDATA[  Principles for Teaching Linear Programming  ]]>
+  </title>
+  <link> https://sophie.huiberts.me/blog/2026/teaching/index.html </link>
+  <guid> https://sophie.huiberts.me/blog/2026/teaching/index.html </guid>
+  <description>
+    <![CDATA[  Philosophy about what to teach when teaching LP  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  
+<p>This semester I am teaching a class together with Alantha Newman at ENS Lyon. My half of the course is on the simplex method and linear programming. In this blog post, I will outline the principles of how <em>I</em> think linear programming should be taught.</p>
+<h2 id="no_tableau">No Tableau</h2>
+<p>It is my firm belief that nobody has ever learned anything from a simplex tableau. Personally, despite being a well-recognized researcher in LP, I do not understand them. I could not pivot a step if you gave me a thousand dollars. As such, I would never ask a student to learn how to do this either.</p>
+<h2 id="inequality_form">Inequality Form</h2>
+<p>The only linear program worth writing down is of the form</p>
+\[\begin{aligned}
+\operatorname{maximize} \quad &c^T x \\
+    \operatorname{subject~to} \quad & A x \leq b.
+\end{aligned}\]
+<p>In particular: standard form &#40;\(Ax = b, x \geq 0\)&#41; and canonical form &#40;\(Ax \leq b, x \geq 0\)&#41; are banned. When you permit variable bounds as part of your notation, you commit a type error. An index should be <em>either</em> a variable index <em>or</em> a constraint index. Variable bounds like \(x\geq 0\) demand you use a single index both to indicate a variable \(x_i\) and a constraint \(x_i \geq 0\). This is a terrible situation that must be avoided at all costs.</p>
+<h3 id="pros_and_cons">Pros and Cons</h3>
+<p>Sticking to inequality form has many other benefits including:</p>
+<ul>
+<li><p>you can draw pictures of your LPs, where a 3D picture is for an LP with 3 variables. In equality form this is is impossible</p>
+</li>
+<li><p>Newtonian mechanics&#39; provides a clean intuition for deriving duality. The law \(F=ma\) provides a clean analog for Farkas&#39; Lemma, and in turn complementary slackness becomes the most intuitive fact in the world.</p>
+</li>
+<li><p>The simplex method is much easier to represent in inequalty than in equality form. In particular the expression \(b-Ax\) gets to be reserved for slacks &#40;which makes sense&#41; instead of being forced into the role of reduced cost &#40;which does not make sense&#41;.</p>
+</li>
+</ul>
+<p>The only meaningful downside is if you want to cover interior-point methods. Something like a log-barrier IPM is much simpler in equality form.</p>
+<h2 id="no_theoretical_nonsense">No Theoretical Nonsense</h2>
+<p>As Harris so eloquently puts it: &quot;Linear programming is a practical technique and not a mathematical exercise.&#39; Therefore, we shall not waste any class time on nonsense that only exists in theory.</p>
+<ul>
+<li><p>Degenerate pivot steps do not exist.</p>
+</li>
+<li><p>We only mention Bland&#39;s pivot rule in order to make fun of it.</p>
+</li>
+<li><p>We only mention Dantzig&#39;s pivot rule in order to have a healthy discussion about scale-invariance.</p>
+</li>
+</ul>
+<p>The matter of degeneracy is a complicated one. Everything from its definitions, its causes, implications and remedies are vastly different in theory and in practice. I am not aware of any comprehensive academic publications describing degeneracy in practice, and I do not respect the theoretical approaches to it. Thus, ignoring its existence is the only way forward. This way we have time to talk about the more important things in life.</p>
+<h2 id="lecture_notes">Lecture Notes</h2>
+<p>I post <a href="https://sophie.huiberts.me/files/lyon2026.pdf">my lecture notes</a> online, and typically are only a week or two behind class schedule haha. If you have any comments, do give me a shout. I love to hear from you.</p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Sophie Huiberts</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
+    <![CDATA[  The Failure of Sparse Smoothed Analysis  ]]>
+  </title>
+  <link> https://sophie.huiberts.me/blog/2026/sparse-smoothed/index.html </link>
+  <guid> https://sophie.huiberts.me/blog/2026/sparse-smoothed/index.html </guid>
+  <description>
+    <![CDATA[  A proof that Dantzig&#39;s and Bland&#39;s pivot rules have exponential sparse smoothed complexity.  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  
+<p>Earlier this week I posted a list of arguments why smoothed analysis is a poor model to study the running time of the simplex method. &#40;Hence why we introduced <a href="https://arxiv.org/abs/2510.21613">by-the-book analysis</a> which has none of those problems.&#41;</p>
+<p>One thing I mentioned was that the standard Klee-Minty cube is stable under zero-preserving perturbations. Someone asked me for a proof. Since there is currently no written source for this lore, I will write a quick proof here.</p>
+<p>Let&#39;s start with some traditional Klee-Minty cubes:</p>
+\[\begin{aligned}
+\operatorname{maximize} \quad &x_d \\
+    \operatorname{subject~to} \quad & 0 \leq x_1 \leq 1 \\
+    & 0.2 x_{j-1} \leq x_j \leq 1-0.2 x_{j-1} \qquad \forall j \in \{2,\dots,d\}.
+\end{aligned}\]
+<p>Assume the inequalities are ordered as shown: first we list both inequalities for \(j=2\) and then both inequalities for \(j=3\) and so on.</p>
+<p>We shift the means slightly and then perturb all non-zero coefficients. This yields a linear program</p>
+\[\begin{aligned}
+\operatorname{maximize} \quad x_d \hphantom{\leq}& \\
+    \operatorname{subject~to} \quad  0.1 + \alpha_1 \leq& (1+\gamma_1) x_1 \\
+    & (1+\delta_1) x_1 \leq 0.9+\varepsilon_1 \\
+     0.1 + \alpha_j + (0.2 + \beta_j)  x_{j-1} \leq& (1+\gamma_j) x_j \\
+    & (1+\delta_j) x_j \leq (0.9+\varepsilon_j) - (0.2 + \eta_j) x_{j-1} \qquad \forall j \in \{2,\dots,d\}.
+\end{aligned}\]
+<p><strong>Theorem.</strong> If \(\alpha,\beta,\gamma,\delta,\varepsilon,\eta \in [-0.05,0.05]^d\) then Bland&#39;s rule takes exponentially many pivot steps.</p>
+<p><strong>Proof.</strong> We go by induction. We prove that there are exactly \(2^d\) bases, and Bland&#39;s rule will visit all bases when it starts at the basis minimizing \(x_d\) and works to maximize \(x_d\). All basic feasible solutions \(x\) satisfy \(x \in [0,1]^d\). The Bland path is reversible: if we start at the basis maximizing \(x_d\) and we use Bland&#39;s rule to minimize \(x_d\) then the same bases are visited but in reverse order.</p>
+<p>We can check the base case \(d=1\) easily. The starting basis consists of the constraint \(0.1 + \alpha_1 \leq (1+\gamma_1)x_1\) and the end basis consists of the constraint \((1+\delta_1)x_1 \leq 0.9 + \varepsilon_1\). The two basic feasible solutions \(\frac{0.1 + \alpha_1}{1+\gamma_1}\) and \(\frac{0.9+\varepsilon_1}{1+\delta_1}\) are easily verified to be in \([0,1]\).</p>
+<p>When \(d \geq 2\), assume that the induction statement has been proven for \(d-1\). The starting basis for \(d\) consists of all lower-bounding constraints: \(0.1 + \alpha_1 \leq (1+\gamma_1)x_1\) and \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1}\leq(1+\gamma_j)x_j\) for all \(j \in \{2,\dots,d\}\).</p>
+<p>Take the Bland path for \(d-1\), and append to every basis in it the constraint \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1} \leq (1+\gamma_j)x_j\). These bases are now bases for the KM-cube in \(d\) variables. The associated basic solutions are identical on coordinates \(1,\dots,d-1\) and have \(x_d = \frac{0.1 + \alpha_j + (0.2+\beta_j)x_{d-1}}{1+\gamma_j}\). The Bland path for \(d-1\) contains \(2^{d-1}\) bases and increases the value of \(x_{d-1}\) in every step. Since \(1+\gamma_d \in [0.95,1.05]\) and \(0.1 + \alpha_d \in [0.05,0.15]\) and \(0.2 + \beta_d \in [0.15,0.25]\) and \(x_{d-1} \in [0,1]\) we get \(x_d \in [0, 0.43]\).</p>
+<p>When we consider the constraint \((1+\delta_d)x_d \leq (0.9+\varepsilon_d)-(0.2+\eta_d)x_{d-1}\), we see that the left-hand side is at most \(1.05 \cdot 0.43 \leq 0.46\) and the right-hand side is at least \(0.85-0.25 = 0.6\). That is all we needed to check in order to verify that the bases constructed so far are feasible.</p>
+<p>Every step on our path so far is improving. Due to our chosen ordering of the inequalities, the constraint \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1} \leq (1+\gamma_j)x_j\) will not leave the basis until there is no other possible improving direction left. Hence our path so far is all part of the Bland path for our KM-cube in \(d\) variables.</p>
+<p>At the end of our path so far, Bland&#39;s rule will pivot out the constraint \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1} \leq (1+\gamma_j)x_j\) and pivot in \((1+\delta_d)x_d \leq (0.9+\varepsilon_d)-(0.2+\eta_d)x_{d-1}\), since it is the only available improving move.</p>
+<p>Now take again the Bland path for \(d-1\), but reverse its order and append to every basis in it the constraint \((1+\delta_d)x_d \leq (0.9+\varepsilon_d)-(0.2+\eta_d)x_{d-1}\). This yields \(2^{d-1}\) more bases for the \(d\)-variable KM-cube. Because we reversed the order, the Bland path is decreasing \(x_{d-1}\). Since \(0.2+\eta_d > 0\) and \(1+\delta_d > 0\), the path is thus increasing the value of \(x_d\). We have now constructed our full Bland path of \(2^d\) bases. It remains to show that these final \(2^{d-1}\) bases are feasible and in \([0,1]^d\). Note that \(1+\delta_d \in [0.95,1.05]\), \(0.9+\varepsilon_d \in [0.85,0.95]\) and \(0.2+\eta_d \in [0.15,0.25]\). Since \(x_{d-1} \in [0,1]\) we get \(x_d = \frac{0.9+\varepsilon_d - (0.2+\eta_d)x_{d-1}}{1+\delta_d} \in [0.57, 1]\). The only constraint that can lead to infeasiblity is \(0.1 + \alpha_j + (0.2+\beta_j)x_{j-1} \leq (1+\gamma_j)x_j\) but its left-hand side is at most \(0.4\) and its right-hand side is at least \(0.57\), hence the bases are all feasible. <em>QED</em></p>
+<h2 id="interpretation">Interpretation</h2>
+<p>This theorem directly shows us that Bland&#39;s rule has exponential complexity under both relative and zero-preserving smoothed analysis. When we rescale the inequalities by large numbers in the standard way, it follows directly that Dantzig&#39;s most-negative reduced cost rule has exponential complexity for relative smoothed analysis.</p>
+<p>In my <a href="https://sophie.huiberts.me/blog/2026/beyond-worst-case/">previous post</a> I interpreted the above theorem by stating that zero-preserving smoothed analysis is a dead end. While I stand by that statement, I do want to give a second possible interpretation.</p>
+<p>Namely, you can conclude that Bland&#39;s rule is just bad.<sup id="fnref:agree">[1]</sup> More specifically: Bland&#39;s rule is purely combinatorial in nature. Perturbations are &#40;stochastic&#41; geometry. It is no wonder that Bland&#39;s pivoting decisions fail to benefit from perturbations. Dantzig&#39;s rule <a href="https://www.youtube.com/watch?v&#61;tbOZvbpZp44">is also bad</a> of course. In this case, specifically because it fails to be scale-invariant with respect to rescaling the inequalities. Dantzig thus similarly fails to be a geometrically-steered pivot rule.</p>
+<p>When your pivot rule does incorporate the ambient geometry, you can do significantly better than zero-preserving smoothed analysis. In fact, in the <a href="https://arxiv.org/abs/2510.21613">by-the-book paper</a> we bound the running time of a simplex method in a much weaker probabilistic model: only the right-hand side is perturbed.<sup id="fnref:btba">[2]</sup> That is part of why we are so proud of the BTB paper: its both mathematically stronger and scientifically more robust than what we had before.</p>
+<h3 id="update_300726">UPDATE 30/07/26</h3>
+<p>I did a bit more lit search after posting. Tuns out that Bland&#39;s rule was already mentioned to have exponential running time under zero-preserving smoothed analysis, as mentioned in <a href="https://www.cs.yale.edu/homes/spielman/BAP/lect14.pdf">Dan Spielman&#39;s lecture notes</a> from 2002&#33; A slightly different model was studied by <a href="https://doi.org/10.1145/3564246.3585220">Miranda Christ and Mihalis Yannakakis</a>, who perturb the non-zero transition probabilities in an MDP. They find MDP&#39;s with \(n\) states for which adversarial zero-preserving perturbations of magnitude at most \(1/n\) take time \(2^{\sqrt{n}}\) to be solved when using a simplex method with Dantzig&#39;s pivot rule on the standard LP formulation.</p>
+<p><table class="fndef" id="fndef:agree">
+    <tr>
+        <td class="fndef-backref">[1]</td>
+        <td class="fndef-content">Every practitioner will agree.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:btba">
+    <tr>
+        <td class="fndef-backref">[2]</td>
+        <td class="fndef-content">We use the semi-random shadow vertex pivot rule, which generally prefers steeper edges over shallower edges. Hence it incorporates the ambient geometry. The analysis also needs some additional minor assumptions to make the definitions make sense: RHS perturbations alone lack scale.</td>
+    </tr>
+</table>
+</p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Sophie Huiberts</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
+    <![CDATA[  Smoothed Analysis is Bullshit*  ]]>
+  </title>
+  <link> https://sophie.huiberts.me/blog/2026/beyond-worst-case/index.html </link>
+  <guid> https://sophie.huiberts.me/blog/2026/beyond-worst-case/index.html </guid>
+  <description>
+    <![CDATA[  Honesty posting.  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  
+<p>Last week we organized a <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/26292">workshop at Schloss Dagstuhl</a> on analysis of algorithms beyond the worst case. Here, beyond worst-case<sup id="fnref:BWCAbook">[1]</sup> refers to a pressing tension in the scientific study of algorithms: theory is often useless shit.<sup id="fnref:spicy">[2]</sup> I mean this with love.</p>
+<p>Theoretical computer science has given us many great pieces of theory, predominantly following the classic modeling paradigm called &#39;worst-case analysis&#39;. Under this paradigm, we specify a single algorithm &#40;or class of algorithms&#41; with mathematical precision and rigor, along with the set of valid inputs. A worst-case analysis then attempts to find the worst-possible performance of the algorithm &#40;in time, memory, or output solution quality&#41;. We describe that worst-case performance as a function of the size of the input, often counted as the number of bits or number of numbers. In some parts of computation, whether modern or undergrad curriculum, worst-case analysis is a useful paradigm for understanding your algorithm&#39;s performance.</p>
+<p>Other parts of computation spit in the face of theory. Paging, SAT, graph coloring, linear programming, mixed-integer linear programming, clustering, traveling salesperson. Each of these works better, is solveable faster, or returns better quality solutions than what worst-case analysis would predict. SAT and MILP are NP-hard in theory. In practice they are easy.<sup id="fnref:explanatorycommaSATMIP">[3]</sup> The simplex method for linear programming runs in exponential time under worst-case analysis. In practice its blazingly fast.<sup id="fnref:explanatorycommaLP">[4]</sup></p>
+<p>We need different approaches, new modeling strategies. And the problem is, mathematicians like us are poorly equipped to think critically about what we do. Nobody believes in average-case analysis. But also smoothed analysis is kinda bullshit,<sup id="fnref:smoothedistrash">[5]</sup> even if people still believe in it.<sup id="fnref:godel">[6]</sup></p>
+<p>So let me describe you how I got radicalized against smoothed analysis, so that you too can stop falling for its cursed allure. These arguments mostly come from discussions with my PhD student <a href="https://eleonbach.github.io/">Eleon Bach</a>. They were published in <a href="https://arxiv.org/abs/2510.21613">this paper</a> but here on the blog I can write with more zest.</p>
+<h2 id="hypersparsity">Hypersparsity</h2>
+<p>Real-world linear program constraint matrices have a property called hypersparsity. For one, that means that the matrix is very sparse: 99.99&#37; of matrix entries are zero &#40;and thus not even stored in memory&#41;. Only 0.01&#37; is non-zero. This is important for real-world codes: the simplex method is <a href="https://www.mixedinteger.org/EUROMIP/2025/slides/laurent-porrier.pdf">memory-bound</a>, so if you destroy all zeroes then your running time blows up. The instances we study in smoothed analysis have no sparsity: with probability 1, all entries of the matrix are non-zero. This is bad.</p>
+<p>The second part of hypersparsity is the structure of the non-zeroes: most non-zero matrix entries share a handful of values. Most entries are probably equal to 1, but even among the remaining entries there are only a limited number of unique values. This is a problem for smoothed analysis: almost surely, all entries have distinct values. This is bad.</p>
+<h2 id="worst-case_instances_are_sparse_and_stable">Worst-case instances are sparse and stable</h2>
+<p>So smoothed instances do not look like real-world instances for sparsity reasons. This is unlike worst-case instances: the Klee-Minty cubes are hypersparse. Looking purely at the patterns in the constraint matrix, one would assume that KM-cubes are more like real-world instances than smoothed analysis instances are.</p>
+<p>You may think &quot;could we do smoothed analysis in a sparse way? We could only perturb the non-zero entries in the input data&quot;. This thought puts you in good company: Spielman and Teng <a href="https://arxiv.org/abs/cs/0111050">propose</a> the same thing. Too bad its a dead end. If you choose the parameters right, then the behavior of the KM-cube is stable under constant-magnitude zero-preserving perturbations. That is, the zero-preserving smoothed complexity of the simplex method &#40;with the most-negative reduced cost pivot rule&#41; is exponential.</p>
+<h2 id="even_imprecise_numbers_are_precise">Even imprecise numbers are precise</h2>
+<p>Next issue. Some linear programs do contain numbers that &#39;look inaccurate&#39;: numbers like 15.79081 or 43.15593. Maybe those numbers contain some type of independent Gaussian noise to make them look like that? I don&#39;t think so. If you allow yourself to change such &#39;ugly&#39; numbers by as little as 0.01&#37; then the previously-optimal solution will violate some constraints by as much as 50&#37;. This holds for 13 out of 90 NETLIB instances, quite a large amount.<sup id="fnref:robust">[7]</sup> Feel free to disagree with my interpretation, but I personally think that means that the &#39;ugly random-looking numbers&#39; have important non-trivial relations between eachother. Hence they cannot be changed in isolation. This would violate a key assumption of smoothed analysis: that all random noise entries are independently distributed.</p>
+<h2 id="singular_matrices_should_stay_singular">Singular matrices should stay singular</h2>
+<p>In a typical LP, not every maximal square submatrix is a basis. Some submatrices are singular. Singular submatrices are good: the simplex method will never pivot to them, so they don&#39;t cost any extra time. If you add small random Gaussian noise to your constraint matrix, then every submatrix will be basic. This is a disaster: what used to be a singular submatrix &#40;good&#41; is now a basic submatrix with high condition number &#40;very bad&#41;.</p>
+<p>If you read your favorite solver&#39;s user manual or talk to their helpdesk, you will learn this: please write your input data in maximum precision. Use integer numbers if you can, or 64-bit floats if you must. Do not use 32-bit floats, for they are too imprecise and that imprecision hurts solver performance. One reason that is given for this advice is what I say above: low precision may cause nominally singular submatrices to pass the threshold and become basic. A basis with high condition number will ruin your numerical stability and your simplex method performance along with it.</p>
+<p>So: smoothed analysis says &#39;more noise &#40;less precision&#41; is good&#39;. The user manual says &#39;more precision is good&#39;. Smoothed analysis is wrong, the user manual is correct.</p>
+<h2 id="philosophical_incoherence">Philosophical incoherence</h2>
+<p>Final issue. In smoothed analysis, we assume that there is an idealized piece of input data which gets perturbed by random noise added after its formulation. What is this noise? Where does it come from? What does it model?</p>
+<p>Some people suggest the noise as modeling floating-point inaccuracy, implicitly advocating for a value of \(\sigma = 2^{-53} \approx 10^{-16}\) as per IEEE 754. Other people speak of the noise as modeling measurement error, which would endorse a value of \(\sigma \approx 10^{-2}\). This disagreement is ridiculous. Imagine admitting this to a real scientist, like a physicist: &quot;yeah we have a theoretical understanding, except we don&#39;t agree what our model models and our opinions about the central parameter&#39;s value differ by 14 order of magnitude.&quot; Not a good look.</p>
+<h2 id="smoothed_analysis_is_trash">Smoothed analysis is trash</h2>
+<p>So that&#39;s the deal, those are the arguments that radicalized me against smoothed analysis for LP. Its instances don&#39;t pass the most basic sanity checks, its conclusions seem to contradict the user manual ground truth, and the whole theory lacks a coherent philosophical grounding.</p>
+<p>This all leaves a crucial question: how should one analyze an algorithm when worst-case analysis fails? At the workshop we had talks from different subfields, and people had different partial answers to this question. Some people went deeper into the theory, other people proposed to engage more with computational experiments in one form or another. Some people thought that a good analysis method would be broadly applicable, others were happy to exploit more problem-specific features. This is an exciting set of questions and a lively research field.</p>
+<p>For the simplex method, by far the best current analysis framework is <a href="https://arxiv.org/abs/2510.21613">by-the-book analysis</a>, our new baby &#40;STOC &#39;26&#41;. It is not perfect but it is a big step up from all that came before.</p>
+<p>I am curious to see where all the workshop&#39;s topics and participants will go next. Although none of us has all the answers, we are all making progress.</p>
+<p><table class="fndef" id="fndef:BWCAbook">
+    <tr>
+        <td class="fndef-backref">[1]</td>
+        <td class="fndef-content">For an overview of items falling under this umbrella, take a look at <a href="https://www.cambridge.org/9781108494311#resources">this book edited by Tim Roughgarden</a> and use password &#39;BWCA&#95;CUP&#39; to open it.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:spicy">
+    <tr>
+        <td class="fndef-backref">[2]</td>
+        <td class="fndef-content">I am not pulling any punches today. The literature doesn&#39;t capture people&#39;s feelings, and normally you can only observe those by attending an IRL event. However, events like this workshop, broadly scoped on BWCA in its entirety, happen only once every 12 years and only permit 25 attendees. As such, you probably don&#39;t often hear the spicier takes. This blog post collects a few more critical notes, some mine and some taken from others. Don&#39;t get discouraged by any of this criticism: it applies to everyone&#39;s work, including my own. I built my career on doing smoothed analysis of the simplex method, so mostly I am throwing in my own windows here. The point is to reflect critically, and sometimes that is easier when we don&#39;t mince our words. Anyway, see for yourself what you can get out of this blog post: use it to help develop your own sense of critical evaluation. Nobody trains us mathematicians how to do this, and we gotta learn somehow.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:explanatorycommaSATMIP">
+    <tr>
+        <td class="fndef-backref">[3]</td>
+        <td class="fndef-content">Crafting hard instances is not difficult. But somehow, we have reams and reams of practical real-world instances which are easy to solve. Electronics designs get verified bug-free by showing that huge boolean formulas are UNSAT. Swathes of global shipping and manufacturing get planned by solving MIPs. 10k variables is tiny for these solvers, but should be huge for any true believer in NP-hardness.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:explanatorycommaLP">
+    <tr>
+        <td class="fndef-backref">[4]</td>
+        <td class="fndef-content">For the simplex method, crafting hard instances is difficult. What I mean by that is, crafting numerically unstable instances is easy and your solver will struggle with those. But instances without numerical problems, but which do exhibit super-polynomial running times on real physical IEEE 754 compliant computer hardware? Constructing those is an open research problem.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:smoothedistrash">
+    <tr>
+        <td class="fndef-backref">[5]</td>
+        <td class="fndef-content">At least it is trash for the context of studying linear programming, as I will lay out in this blog post. For other algorithms and applications areas, these arguments may not apply. Maybe for your problem, smoothed analysis is fine. I invite you to consider this matter critically in the context of the algorithm you study.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:godel">
+    <tr>
+        <td class="fndef-backref">[6]</td>
+        <td class="fndef-content">People really did believe in this theory. Spielman and Teng&#39;s <a href="https://www.sigact.org/prizes/g&#37;C3&#37;B6del/2008.html">Gödel Prize citation</a> claims that smoothed analysis &quot;provides a new rigorous framework for explaining the practical success of algorithms&quot;. Those are big claims: not only is it rigorous &#40;mathematically? scientifically? who knows&#41;, but it provides actual explanation&#33;</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:robust">
+    <tr>
+        <td class="fndef-backref">[7]</td>
+        <td class="fndef-content">These facts are taken from <a href="https://web.archive.org/web/20251211052055/https://www2.isye.gatech.edu/~nemirovs/FullBookDec11.pdf">this book</a>, although the authors give a very different interpretation of what these same facts mean.</td>
+    </tr>
+</table>
+</p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Sophie Huiberts</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
+    <![CDATA[  Solving LP by Hand  ]]>
+  </title>
+  <link> https://sophie.huiberts.me/blog/2026/hand-computation/index.html </link>
+  <guid> https://sophie.huiberts.me/blog/2026/hand-computation/index.html </guid>
+  <description>
+    <![CDATA[  Historical anecdotes.  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  
+<p>As narrated by Dantzig in many retrospective articles, he invented linear programming in the summer of 1947 with helpful suggestions of Leonid Hurwicz and Tjalling Koopmans. The first computational experiment with the simplex method finished April 10th,<sup id="fnref:NBS">[1]</sup> 1948. This was the famous diet problem computation, described from Dantzig&#39;s point of view in <em>Linear Programming and Extensions</em> and described from the computer&#39;s point of view in <em>When Computers Were Human</em> &#40;David Alan Grier&#41;. Notably, this computation was performed by hand: 5 people worked on this for 21 days.<sup id="fnref:letters">[2]</sup></p>
+<p><img src="https://sophie.huiberts.me/blog/2026/computers-mathtables.jpg" alt="Black and white photograph. Twelve humans sit, quite packed, in rows at small desks. Each person has a large calculator in front of them. In terms of size and button shape they look like Comptometers, but they also seem to have rounded corners and cables leading from the back. Ten of the humans I would describe as white women, one I think is a white man, and the last one is a black man. The desks have enough space for the calculator, plus maybe two pieces of paper side by side without overlap." /></p>
+<p><em>Human computers of the Mathematical Tables Project, where the 1948 diet LP computation was performed.</em></p>
+<p>Even after this demonstration, a number of real applications of LP were performed by hand. Lets look a bit of a timeline for electronic computers first. The first specialized simplex method for transportation problems<sup id="fnref:transportation">[3]</sup> was coded in 1950 for the SEAC. In 1952, Orchard-Hays got the first simplex code working on the IBM Card Programmed Calculator, and later on the more recognizeable IBM 701 machines. These early hardwares and softwares were very error-prone and needed a lot of highly-skilled babysitting, but Orchard-Hays&#39; later codes were commercially useful.</p>
+<p>Charnes, Cooper and Mellon famously presented the first work on LP in fossil fuel blending in 1951. They do not directly specify, but we can be fairly sure that their computation was done by hand. Although the LP had no workable structure that aided computation, it was fairly small problem: maybe 9 inputs, 6 outputs.</p>
+<p>Dantzig writes in 1954<sup id="fnref:largescale">[4]</sup> that often, when studying a particular structure of LP, human hands with a specialized algorithm were faster than an electronic computer with a general LP code. For example, a transportation problem<sup id="fnref:transportation">[3]</sup> with a hundred combined rows &#40;sources&#41; and columns &#40;sinks&#41; can be &#39;handled nicely by clerks&#39;. Dantzig writes that already in 1953, Heinz<sup id="fnref:advances">[5]</sup> used LP to ship ketchup from 6 plants to 70 warehouses. We can be fairly sure that a small transportation problem like this was solved by hand. And this is presumably without the 1956 Ford-Fulkerson algorithm.</p>
+<p>One other application of a transportation problem solved by hand is described in 1955<sup id="fnref:advances">[5]</sup>. The RAND Corperation employed a large number of computers,<sup id="fnref:facilities">[6]</sup> as well as many researchers who had computations they wanted to see performed. In order to form a schedule that takes both priority and urgency into account, a transportation problem was formulated. Every week has a number of computer-hours available, every tasks needs a certain hours before it is completed. Dantzig gives an example where one has 18 projects and 10 weeks, resulting in a problem with 28 equations in 180 unknowns. He adds upper bounds of 40 hours on the individual edges to indicate that only one <em>person</em> can work on a project at a time.</p>
+<p>This is perhaps the ultimate showcase that human computers remained important well into the mid-1950s: humans were solving an LPs, by hand, to decide in what order the different computing tasks should be solved &#40;also by humans&#41;.</p>
+<p><table class="fndef" id="fndef:NBS">
+    <tr>
+        <td class="fndef-backref">[1]</td>
+        <td class="fndef-content">Date is from the <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/RPT/nbsreportApr-Jun1948.pdf">NBS report</a>. Note the involvement of famous matrix theorist Olga Taussky-Todd. I am not aware of any other document crediting her involvement with LP or computation. I asked David Alan Grier about this, he speculated that perhaps Taussky-Todd did not want to be credited: computation was seen as low-skilled &#40;women&#39;s&#41; work, and Taussky-Todd may not have felt comfortable being associated with that.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:letters">
+    <tr>
+        <td class="fndef-backref">[2]</td>
+        <td class="fndef-content"><a href="https://sophie.huiberts.me/files/dantzig-von-neumann-1948.pdf">Correspondence from Dantzig to Von Neumann</a>. The 5 computers were supervised for 4 hours per day by Jack Laderman. Note that only Laderman is credited by name, not the computers and not Taussky-Todd.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:transportation">
+    <tr>
+        <td class="fndef-backref">[3]</td>
+        <td class="fndef-content">Given a bipartite graph, with supplies of a commodity available on the one side and demands on the other side, how to route the goods at minimal cost?</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:advances">
+    <tr>
+        <td class="fndef-backref">[5]</td>
+        <td class="fndef-content"><a href="https://www.rand.org/pubs/research_memoranda/RM1475.html">Recent Advances in Linear Programming</a>, Dantzig, April 12th, 1955.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:facilities">
+    <tr>
+        <td class="fndef-backref">[6]</td>
+        <td class="fndef-content">Dantzig writes &quot;The RAND Corporation has extensive computing facilities that are in constant use by the research personnel.&quot; Despite how he phrases it, he is talking about human being here.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:largescale">
+    <tr>
+        <td class="fndef-backref">[4]</td>
+        <td class="fndef-content"><a href="https://apps.dtic.mil/sti/tr/pdf/ADA596199.pdf">Status of Solution of Large-Scale Linear Programming Problems</a>, Dantzig, November 30th, 1954.</td>
+    </tr>
+</table>
+</p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Sophie Huiberts</atom:name>
+  </atom:author>
+        
+</item>
+</channel></rss>

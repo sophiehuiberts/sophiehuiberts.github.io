@@ -1,0 +1,83 @@
+<!--
+IMPORTANT NOTE:
+  on tag pages you CANNOT rely on local page variable such as `hasmath`
+  `hascode`, `title` etc as the generation of the tag pages will be triggered
+  by different pages each of which will have defined these variables in
+  a different ways.
+  For tag pages, ALL variables used MUST be
+  - global ones (whatever you might have defined in `config`)
+  - be tag string (`tag`)
+  otherwise you cannot guarantee their content.
+  There is one way to bend this: you can use {{fill varname rpath}} to
+  input the value of the variable `varname` defined at the page corresponding
+  to `rpath`.
+  You can also use `{{ispage tag/blog/*}} ... {{end}}` to have things that
+  depend upon which tag we're on (for instance if you want a specific title).
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/franklin.css">
+  <!-- <link href="/css/style.css" rel="stylesheet" type="text/css"> -->
+  <link href="/css/col.css" rel="stylesheet" media="screen and (min-width: 630px)" type="text/css">
+  
+  <link rel="alternate" type="application/rss+xml" title="Sophie Huiberts Feed" href="/feed.xml" />
+
+  <meta property="og:type"  content="article">
+  <meta property="og:site_name" content="Sophie Huiberts">
+
+  
+
+  
+  <meta property="og:description" content="">
+  
+
+
+</head>
+<body>
+
+
+
+<nav class="franklin-content" style="margin-top: 1.5em;">
+    <a href="/"><b>(home)</b></a>
+             &ensp; // &ensp;
+    <a href="/publications"><b>(publications)</b></a>
+             &ensp; // &ensp;
+    <a href="/tag/blog"><b>(blog)</b></a>
+             &ensp; // &ensp;
+    <a href="/scans"><b>(scans from the library)</b></a>
+</nav>
+<header class="franklin-content" style="margin-top: 1.5em;">
+  
+</header>
+<!-- Content appended here -->
+
+  <div class="franklin-content">
+    
+      <h1>Tag: ai</h1>
+    
+
+    <p>
+      <a href="/blog/2026/methodology/">AI-assisted Proofs Come with Additional Responsibilities</a> <date>(Nov 23, 2026)</date><br>
+<a href="/blog/2026/meta/">The New Hiring/Job Search Meta</a> <date>(Oct 26, 2026)</date><br>
+<a href="/blog/2026/community/">Community and Company</a> <date>(Oct 8, 2026)</date><br>
+
+      <!-- <a href="/"><b>(back)</b></a> -->
+    </p>
+
+    <footer>
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Sophie Huiberts.
+    
+    <br>
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>
+</footer>
+
+  </div>
+</body>
+</html>

@@ -23,6 +23,75 @@
 
 <item>
   <title>
+    <![CDATA[  AI-assisted Proofs Come with Additional Responsibilities  ]]>
+  </title>
+  <link> https://sophie.huiberts.me/blog/2026/methodology/index.html </link>
+  <guid> https://sophie.huiberts.me/blog/2026/methodology/index.html </guid>
+  <description>
+    <![CDATA[  .  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  
+<p>Recently, Marcin Polkowski announced <code>popso</code>: a vibe coded MILP solver. He advertised it as &#39;written from scratch&#39; and &#39;already solving more problems than HiGHS and SCIP&#39;. On the process, all he writes is this:</p>
+<blockquote>
+<p>Does anyone know how long it takes to write a competitive MILP solver? &#91;...&#93; The textbook answer is &quot;a team, about a decade&quot;. My answer, as of this week, is &quot;hold my Coke Zero&quot;.</p>
+</blockquote>
+<p>Despite being reductive, I do like this question.</p>
+<p><code>popso</code> is not a well-executed project. For one, it is clearly tuned on the test set. Performance variability<sup id="fnref:variability">[1]</sup> in MIP is high, and so tuning on your test set is problematic. Much of that variability is within families. That is, when you write an instance generator and you tune on one set of samples, then even if you draw fresh samples from those generators you are still overtuned. This invalidates all Polkowski&#39;s benchmark results.</p>
+<p>Benjamin Müller of COPT additionally <a href="https://lnkd.in/p/eGEpckaU">pointed out</a> various parts of the code come from HiGHS and SCIP, and that &#39;one could be tempted to say that the AI just created a combination of the two solvers&#39;. Indeed, Claude&#39;s comments in the code reveal that the other solvers were used as a direct reference.</p>
+<p>So far, this is a story like so many others. An LLM creates a large piece of bad work. The machine operator fails the basic responsibilities that we have towards each other. Not meaningfully different from what OpenAI and Anthropic have been doing.</p>
+<p>But not all LLM-involved projects hit the same failures. I have seen plenty of non-examples. Colleagues who prompted to solve mathematical problems within their expertise and wrote up the result as a well-readable paper with adequate exposition and citations. These are pieces of work that, had they been produced last year, I would have called &#39;nice&#39; or even &#39;good&#39;. Nevertheless, I do think many of these papers fail their responsibilities. Specifically: they fail their specific responsibilities as LLM-involved projects.</p>
+<p>We must not forget: these papers required a different &#40;and less&#41; work from their authors. A significant chunk of the work was performed by the machine, with the authors taking up roles as machine operators. This is a methodological novelty.</p>
+<p>In other fields of science, papers report their methodology. Mathematicians have not traditionally needed to do so, because every paper&#39;s methods were the same. You read the literature, walk through a forest, discuss at the whiteboard, and take a long shower. At some point you have a strategy, and then you spend however long working it out and writing it up.</p>
+<p>Now we have more options in terms of different methods. That means we need more substantive methodological reporting. The &#39;AI disclosures&#39; that people are writing are far too meagre. It is not enough to say &quot;GPT-6 pro was used to prove Lemma 1, 2, and 3&quot;. That is distributing credit, not a description of methods.<sup id="fnref:STOC">[2]</sup> The methods section needs to be a full section of the paper, able to cover a page with little issue.</p>
+<p>When you study an object, you always study the method as well. You cannot learn about the planets without learning about your telescope, and you cannot study medicines without learning about mice. Similarly, I don&#39;t think we can learn about math from LLMs without learning about the LLMs. That means the specific usage of the LLMs must be reported in papers.</p>
+<p>Here are just a few examples of things that I would like to see reported:</p>
+<ol>
+<li><p>We tested LLMs A, B, and C. Each was prompted n times for this problem, and respectively x&#37;, y&#37; and z&#37; of sessions outputted the key ideas that were needed for this theorem.</p>
+</li>
+<li><p>We used a &#36;N/month subscription from vendor D over the course of M days. The session used K tokens and, if one were to pay API prices for that, would have cost &#36;L.</p>
+</li>
+<li><p>We prompted the machine with the problem like this, after a while we suggested such-and-so strategy and told it to look at these papers for ideas.</p>
+</li>
+<li><p>When we asked the robot post-hoc to identify where the ideas came from, it said UVW99. This answer was true/false.</p>
+</li>
+<li><p>The machine gave extraneous details O, P, Q, and left out important steps R, S, T.</p>
+</li>
+<li><p>All raw chat transcripts.</p>
+</li>
+</ol>
+<p>What unifies these example questions is that they can only be answered by the original machine operators. Some are about how the operator used the machine, others have been could be prompted by anyone but became impossible once the paper was publically available and assimilated into the borg.</p>
+<p>Reporting on your machine use is very common in other computational fields. I often hear people say that writing computational MIP papers consists of much more effort writing than effort in computation. That is because they &#40;or their reviewers..&#41; know that methodological transparency is valuable. It is just as important a piece of the science as the actual results. The change I ask for has long been normal in other fields.</p>
+<p>Let&#39;s wrap back to Polkowski. Not only is it not good, he is missing out on answering all the methodological questions that came across him. Most visibly, &#39;how long does it take to write a competitive MILP solver?&#39;. He is aware of the question, asks it himself, but refuses to attempt a serious answer. That makes his effort a waste of everyone&#39;s attention.</p>
+<p>I want to highlight one positive example. After 3SUM, <a href="https://youtu.be/hN9-BwaZCfw?t&#61;3935">Josh Alman</a> and <a href="https://people.csail.mit.edu/virgi/thoughts.txt">Virginia Vassilevska Williams</a> each provided an examplary amount of information. This is key scientific information, and I would have loved to see it all included in the paper. Skipping that is a missed opportunity, and I believe that going forward we should start demanding papers to include a substantial section of this exact nature.</p>
+<p><table class="fndef" id="fndef:variability">
+    <tr>
+        <td class="fndef-backref">[1]</td>
+        <td class="fndef-content">Performance variability is the phenomenon where small changes in the code can cause a lot of variation in running time. A change which improves your geometric mean time by 1&#37; may increase the running time on some instances by 2-3x and decrease others by 0.5x. These changes can be algorithmic, but can also come from changing the random seed or permuting the rows and columns of a model.</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:STOC">
+    <tr>
+        <td class="fndef-backref">[2]</td>
+        <td class="fndef-content">The <a href="https://acm-stoc.org/stoc2027/stoc2027-cfp.html">STOC 2027 CFP</a> is one example of a document that is confused about this difference. The CFP mandates &#39;disclose of substantive use&#39; but the template they provide reads &#39;AI methodology: We used &#91;Tool Name&#93; to assist with &#91;Brief Description of Use&#93;. The tool materially affected &#91;Sections X and Y&#93;. More details can be found in &#91;Section Z&#93;. The authors verified the correctness and originality of all content, including references.&#39; This is merely a disclosure of usage but it is titled as methodology.</td>
+    </tr>
+</table>
+</p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Sophie Huiberts</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  The STOC Video  ]]>
   </title>
   <link> https://sophie.huiberts.me/blog/2026/stocvid/index.html </link>
