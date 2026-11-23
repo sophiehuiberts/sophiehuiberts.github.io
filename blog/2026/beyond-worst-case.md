@@ -4,7 +4,7 @@ hasmath = true
 hascode = false
 
 date = Date(2026, 7, 21)
-tags = ["blog", "theory"]
+tags = ["blog", "simplex", "theory"]
 
 rss_title = title
 rss_description = "Honesty posting."

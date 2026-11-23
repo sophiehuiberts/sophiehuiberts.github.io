@@ -4,7 +4,7 @@ hasmath = false
 hascode = false
 
 date = Date(2026, 10, 26)
-tags = ["blog"]
+tags = ["blog","ai"]
 
 rss_title = title
 rss_description = "What's old is new."

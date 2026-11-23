@@ -4,7 +4,7 @@ hasmath = false
 hascode = false
 
 date = Date(2026, 10, 08)
-tags = ["blog"]
+tags = ["blog","ai"]
 
 rss_title = title
 rss_description = "My community is under attack by commercial interests."

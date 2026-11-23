@@ -4,7 +4,7 @@ hasmath = false
 hascode = false
 
 date = Date(2026, 9, 28)
-tags = ["blog"]
+tags = ["blog","simplex"]
 
 rss_title = title
 rss_description = "Philosophy about what to teach when teaching LP"

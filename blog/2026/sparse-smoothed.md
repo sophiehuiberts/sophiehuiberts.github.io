@@ -4,7 +4,7 @@ hasmath = true
 hascode = false
 
 date = Date(2026, 7, 25)
-tags = ["blog", "theory"]
+tags = ["blog", "simplex", "theory"]
 
 rss_title = title
 rss_description = "A proof that Dantzig's and Bland's pivot rules have exponential sparse smoothed complexity."
