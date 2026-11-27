@@ -54,7 +54,7 @@ The other big question that OpenAI resolved is the complexity of linear programm
 Ever since Khachiyan's result on the ellipsoid method, we know that LP can be solved in weakly-polynomial time.
 That is, the worst-case running time is bounded as poly$(n, d, L)$ where $L$ is the number of bits necessary to write down the LP data $A,b,c$.
 If the numbers in $A,b,c$ require more bits to write down, then the ellipsoid method is allowed to search for longer: not only are the numerical operations more work, but the number of numerical operations performed will grow.
-Interior-point methods also admit weakly-polynomial time upper bounds, as do an assortment of other algorithms such as [this funny paper of Kelner and Spielman](10.1145/1132516.1132524).
+Interior-point methods also admit weakly-polynomial time upper bounds, as do an assortment of other algorithms such as [this funny paper of Kelner and Spielman](https://doi.org/10.1145/1132516.1132524).
 
 What was open for decades, is whether there exists a strongly-polynomial time algorithm for LP.
 For an algorithm to run in strongly-polynomial time, the total number of operations has to be bounded by poly$(n,d)$ and the bit-complexity of any intermediate quantities in the algorithm should be poly$(n,d,L)$.
